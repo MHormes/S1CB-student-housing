@@ -30,7 +30,10 @@ namespace PCBS03_3_student_housing
             if (textBox_accountName.Text == adminNamePass)
             {
                 if(textBox_accountPassword.Text == adminNamePass) {
-                    MessageBox.Show("Success");
+                    adminForm nextForm = new adminForm();
+                    this.Hide();
+                    nextForm.ShowDialog();
+                    this.Close();
                 }
                 else {
                     errorPassword();
@@ -40,7 +43,10 @@ namespace PCBS03_3_student_housing
             else if (textBox_accountName.Text == studentNamePass)
             {
                 if (textBox_accountPassword.Text == studentNamePass) {
-                    MessageBox.Show("Success");
+                    studentForm nextForm = new studentForm();
+                    this.Hide();
+                    nextForm.ShowDialog();
+                    this.Close();
                 }
                 else {
                     errorPassword();
