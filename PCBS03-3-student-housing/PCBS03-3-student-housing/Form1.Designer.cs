@@ -35,80 +35,160 @@ namespace PCBS03_3_student_housing
             this.label_accountPassword = new System.Windows.Forms.Label();
             this.textBox_accountPassword = new System.Windows.Forms.TextBox();
             this.button_login = new System.Windows.Forms.Button();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.pnlBackground = new System.Windows.Forms.Panel();
+            this.pnlBar = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlDragBar = new System.Windows.Forms.Panel();
+            this.pnlBackground.SuspendLayout();
+            this.pnlBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_loginTitle
             // 
             this.label_loginTitle.AutoSize = true;
-            this.label_loginTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_loginTitle.Location = new System.Drawing.Point(267, 76);
+            this.label_loginTitle.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_loginTitle.ForeColor = System.Drawing.Color.White;
+            this.label_loginTitle.Location = new System.Drawing.Point(278, 206);
+            this.label_loginTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_loginTitle.Name = "label_loginTitle";
-            this.label_loginTitle.Size = new System.Drawing.Size(253, 29);
+            this.label_loginTitle.Size = new System.Drawing.Size(425, 47);
             this.label_loginTitle.TabIndex = 0;
             this.label_loginTitle.Text = "STUDENT HOUSING";
             // 
             // textBox_accountName
             // 
-            this.textBox_accountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox_accountName.Location = new System.Drawing.Point(424, 141);
+            this.textBox_accountName.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_accountName.Location = new System.Drawing.Point(514, 324);
+            this.textBox_accountName.Margin = new System.Windows.Forms.Padding(5);
             this.textBox_accountName.Name = "textBox_accountName";
-            this.textBox_accountName.Size = new System.Drawing.Size(134, 30);
+            this.textBox_accountName.Size = new System.Drawing.Size(296, 56);
             this.textBox_accountName.TabIndex = 1;
             // 
             // label_accountName
             // 
             this.label_accountName.AutoSize = true;
-            this.label_accountName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_accountName.Location = new System.Drawing.Point(228, 140);
+            this.label_accountName.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_accountName.ForeColor = System.Drawing.Color.White;
+            this.label_accountName.Location = new System.Drawing.Point(171, 322);
+            this.label_accountName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_accountName.Name = "label_accountName";
-            this.label_accountName.Size = new System.Drawing.Size(183, 29);
+            this.label_accountName.Size = new System.Drawing.Size(300, 47);
             this.label_accountName.TabIndex = 2;
             this.label_accountName.Text = "Account name:";
             // 
             // label_accountPassword
             // 
             this.label_accountPassword.AutoSize = true;
-            this.label_accountPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label_accountPassword.Location = new System.Drawing.Point(228, 188);
+            this.label_accountPassword.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_accountPassword.ForeColor = System.Drawing.Color.White;
+            this.label_accountPassword.Location = new System.Drawing.Point(171, 409);
+            this.label_accountPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_accountPassword.Name = "label_accountPassword";
-            this.label_accountPassword.Size = new System.Drawing.Size(131, 29);
+            this.label_accountPassword.Size = new System.Drawing.Size(212, 47);
             this.label_accountPassword.TabIndex = 3;
             this.label_accountPassword.Text = "Password:";
             // 
             // textBox_accountPassword
             // 
-            this.textBox_accountPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox_accountPassword.Location = new System.Drawing.Point(424, 189);
+            this.textBox_accountPassword.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_accountPassword.Location = new System.Drawing.Point(514, 411);
+            this.textBox_accountPassword.Margin = new System.Windows.Forms.Padding(5);
             this.textBox_accountPassword.Name = "textBox_accountPassword";
-            this.textBox_accountPassword.Size = new System.Drawing.Size(134, 30);
+            this.textBox_accountPassword.Size = new System.Drawing.Size(296, 56);
             this.textBox_accountPassword.TabIndex = 4;
             // 
             // button_login
             // 
-            this.button_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button_login.Location = new System.Drawing.Point(335, 248);
+            this.button_login.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_login.Location = new System.Drawing.Point(393, 535);
+            this.button_login.Margin = new System.Windows.Forms.Padding(5);
             this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(123, 35);
+            this.button_login.Size = new System.Drawing.Size(215, 63);
             this.button_login.TabIndex = 5;
             this.button_login.Text = "LOGIN";
             this.button_login.UseVisualStyleBackColor = true;
-            this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            // 
+            // lblClose
+            // 
+            this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(1008, 1);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(99, 93);
+            this.lblClose.TabIndex = 6;
+            this.lblClose.Text = "✖";
+            this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            // 
+            // pnlBackground
+            // 
+            this.pnlBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBackground.Controls.Add(this.pnlBar);
+            this.pnlBackground.Controls.Add(this.button_login);
+            this.pnlBackground.Controls.Add(this.textBox_accountPassword);
+            this.pnlBackground.Controls.Add(this.label_accountPassword);
+            this.pnlBackground.Controls.Add(this.lblClose);
+            this.pnlBackground.Controls.Add(this.label_accountName);
+            this.pnlBackground.Controls.Add(this.label_loginTitle);
+            this.pnlBackground.Controls.Add(this.textBox_accountName);
+            this.pnlBackground.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlBackground.Location = new System.Drawing.Point(0, 0);
+            this.pnlBackground.Name = "pnlBackground";
+            this.pnlBackground.Size = new System.Drawing.Size(997, 713);
+            this.pnlBackground.TabIndex = 7;
+            // 
+            // pnlBar
+            // 
+            this.pnlBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pnlBar.Controls.Add(this.label1);
+            this.pnlBar.Controls.Add(this.pnlDragBar);
+            this.pnlBar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlBar.Location = new System.Drawing.Point(-1, -1);
+            this.pnlBar.Name = "pnlBar";
+            this.pnlBar.Size = new System.Drawing.Size(997, 95);
+            this.pnlBar.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(897, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 83);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "✖";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pnlDragBar
+            // 
+            this.pnlDragBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.pnlDragBar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pnlDragBar.Location = new System.Drawing.Point(-1, -1);
+            this.pnlDragBar.Name = "pnlDragBar";
+            this.pnlDragBar.Size = new System.Drawing.Size(878, 95);
+            this.pnlDragBar.TabIndex = 9;
+            this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown_1);
+            this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove_1);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button_login);
-            this.Controls.Add(this.textBox_accountPassword);
-            this.Controls.Add(this.label_accountPassword);
-            this.Controls.Add(this.label_accountName);
-            this.Controls.Add(this.textBox_accountName);
-            this.Controls.Add(this.label_loginTitle);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.ClientSize = new System.Drawing.Size(1000, 716);
+            this.ControlBox = false;
+            this.Controls.Add(this.pnlBackground);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.pnlBackground.ResumeLayout(false);
+            this.pnlBackground.PerformLayout();
+            this.pnlBar.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -120,6 +200,11 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.Label label_accountPassword;
         private System.Windows.Forms.TextBox textBox_accountPassword;
         private System.Windows.Forms.Button button_login;
+        private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Panel pnlBackground;
+        private System.Windows.Forms.Panel pnlBar;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlDragBar;
     }
 }
 
