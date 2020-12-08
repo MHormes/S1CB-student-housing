@@ -12,9 +12,13 @@ namespace PCBS03_3_student_housing
 {
     public partial class Form1 : Form
     {
+        //string to pass the username to an other form for later use
+        public static string studentName;
+
         //account names and passwords
         private string adminNamePass = "admin";
         private string studentNamePass = "student";
+        private string studentNamePass1 = "student1";
 
         public Point mouseLocation;
         
@@ -61,11 +65,12 @@ namespace PCBS03_3_student_housing
                 }
             }
             //check if account name is student
-            else if (textBox_accountName.Text == studentNamePass)
+            else if (textBox_accountName.Text == studentNamePass || textBox_accountName.Text == studentNamePass1)
             {
                 //check if student password is correct
-                if (textBox_accountPassword.Text == studentNamePass)
+                if (textBox_accountPassword.Text == studentNamePass || textBox_accountPassword.Text == studentNamePass1)
                 {
+                    studentName = textBox_accountName.Text;
                     //form1 closed and go to student form
                     studentForm nextForm = new studentForm();
                     this.Hide();
