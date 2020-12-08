@@ -16,6 +16,8 @@ namespace PCBS03_3_student_housing
         News news;
         public static List<News> newsList = new List<News>();
 
+        Student student = new Student();
+
         public adminForm()
         {
             InitializeComponent();
@@ -63,6 +65,65 @@ namespace PCBS03_3_student_housing
             this.Hide();
             nextForm.ShowDialog();
             this.Close();
+        }
+
+        //tenant added to the list
+        private void button_addTenant_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBox_tenantName.Text) || String.IsNullOrEmpty(textBox_tenantPassword.Text))
+            {
+                MessageBox.Show("Account name and password required. Please retry.");
+                return;
+            }
+            student.addStudent(textBox_tenantName.Text, textBox_tenantPassword.Text);
+            //textbox cleared
+            textBox_tenantName.Clear();
+            textBox_tenantPassword.Clear();
+            //list updated
+            UpdateStudentList();
+        }
+
+        //tenant removed from the list
+        private void button_removeTenant_Click(object sender, EventArgs e)
+        {
+            //name required
+            if (String.IsNullOrEmpty(textBox_tenantName.Text))
+            {
+                MessageBox.Show("Account name required. Please retry.");
+                return;
+            }
+
+            //student present in the list?
+            if (student.itContainsStudent(textBox_tenantName.Text))
+            {
+                //yes -> remove
+                student.removeStudent(textBox_tenantName.Text);
+                //textbox cleared
+                textBox_tenantName.Clear();
+                //list updated
+                UpdateStudentList();
+            }
+            //no -> error
+            else
+            {
+                MessageBox.Show("Name not present in the list. Please retry.");
+                return;
+            }
+        }
+
+        private void UpdateStudentList()
+        {
+            //listbox cleared
+            listBox_tenants.Items.Clear();
+            List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
+            //new list
+            studentList = student.getStudentList();
+
+            //take all items and add them 1 by 1 in the Listbox.
+            foreach (Tuple<string, string> student in studentList)
+            {
+                listBox_tenants.Items.Add(student.Item1 + " - " + student.Item2);
+            }
         }
     }
 }
