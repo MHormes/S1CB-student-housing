@@ -19,6 +19,9 @@ namespace PCBS03_3_student_housing
         List<Complaint> complaintStudentList = new List<Complaint>();
         Complaint complaint;
 
+        //mouse coords which are needed for GUI drag bar functionality
+        public Point mouseLocation;
+
         public studentForm()
         {
             InitializeComponent();
@@ -76,6 +79,30 @@ namespace PCBS03_3_student_housing
                 {
                     lbxStudentComplaint.Items.Add(comp.GetComplaint());
                 }
+            }
+        }
+
+        //'X' icon used to close current form
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        //updates mouse position when the panel is clicked
+
+        private void pnlDragBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        //updates window position based on the movement on mouse to simulate the default 'drag bar' that was removed due to design reasons
+        private void pnlDragBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
             }
         }
     }

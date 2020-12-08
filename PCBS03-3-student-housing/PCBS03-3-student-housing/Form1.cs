@@ -20,6 +20,7 @@ namespace PCBS03_3_student_housing
         private string studentNamePass = "student";
         private string studentNamePass1 = "student1";
 
+        //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
         
         public Form1()
@@ -98,34 +99,19 @@ namespace PCBS03_3_student_housing
             return;
         }
 
+        //'X' icon used to close current form
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void pnlBackground_Paint(object sender, PaintEventArgs e)
-        {
-            if (pnlBackground.BorderStyle == BorderStyle.FixedSingle)
-            {
-                int thickness = 1;//it's up to you
-                int halfThickness = thickness / 2;
-                using (Pen p = new Pen(Color.Black, thickness))
-                {
-                    e.Graphics.DrawRectangle(p, new Rectangle(halfThickness,
-                                                              halfThickness,
-                                                              pnlBackground.ClientSize.Width - thickness,
-                                                              pnlBackground.ClientSize.Height - thickness));
-                }
-            }
-        }
-
+        
         //updates mouse position when the panel is clicked
         private void pnlDragBar_MouseDown(object sender, MouseEventArgs e)
         {
-            mouseLocation = new Point(-e.X, -e.Y); 
+            mouseLocation = new Point(-e.X, -e.Y);
         }
 
-        //updates window position based on the movement on mouse to simulate default 'drag bar'
+        //updates window position based on the movement on mouse to simulate the default 'drag bar' that was removed due to design reasons
         private void pnlDragBar_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -136,23 +122,19 @@ namespace PCBS03_3_student_housing
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pnlBackground_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
-        }
-
-        private void pnlDragBar_MouseDown_1(object sender, MouseEventArgs e)
-        {
-            mouseLocation = new Point(-e.X, -e.Y);
-        }
-
-        private void pnlDragBar_MouseMove_1(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
+            if (pnlBackground.BorderStyle == BorderStyle.FixedSingle)
             {
-                Point mousePose = Control.MousePosition;
-                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
-                Location = mousePose;
+                int thickness = 2;
+                int halfThickness = thickness / 2;
+                using (Pen p = new Pen(Color.FromArgb(66,66,66,1), thickness))
+                {
+                    e.Graphics.DrawRectangle(p, new Rectangle(halfThickness,
+                                                              halfThickness,
+                                                              pnlBackground.ClientSize.Width - thickness,
+                                                              pnlBackground.ClientSize.Height - thickness));
+                }
             }
         }
     }
