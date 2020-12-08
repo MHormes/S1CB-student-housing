@@ -57,6 +57,7 @@ namespace PCBS03_3_student_housing
                     return;
                 }
             }
+            //EDIT THIS USING THE STUDENT LIST!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             //check if account name is student
             else if (textBox_accountName.Text == studentNamePass || textBox_accountName.Text == studentNamePass1)
             {
