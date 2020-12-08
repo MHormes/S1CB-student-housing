@@ -12,7 +12,9 @@ namespace PCBS03_3_student_housing
 {
     public partial class studentForm : Form
     {
+        //create news list, this is the same list adminForm uses.
         List<News> newsStudentList = adminForm.newsList;
+
         public studentForm()
         {
             InitializeComponent();
