@@ -37,7 +37,7 @@ namespace PCBS03_3_student_housing
             this.label1 = new System.Windows.Forms.Label();
             this.tbxMessage = new System.Windows.Forms.TextBox();
             this.lbxAdminNews = new System.Windows.Forms.ListBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tpAdminAddTenant = new System.Windows.Forms.TabPage();
             this.button_logout = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tpAdminNews.SuspendLayout();
@@ -46,7 +46,7 @@ namespace PCBS03_3_student_housing
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tpAdminNews);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tpAdminAddTenant);
             this.tabControl1.Location = new System.Drawing.Point(15, 32);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
@@ -74,7 +74,7 @@ namespace PCBS03_3_student_housing
             // tbxAuthorName
             // 
             this.tbxAuthorName.Location = new System.Drawing.Point(441, 219);
-            this.tbxAuthorName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxAuthorName.Margin = new System.Windows.Forms.Padding(4);
             this.tbxAuthorName.Name = "tbxAuthorName";
             this.tbxAuthorName.Size = new System.Drawing.Size(311, 22);
             this.tbxAuthorName.TabIndex = 2;
@@ -92,7 +92,7 @@ namespace PCBS03_3_student_housing
             // btnAddNews
             // 
             this.btnAddNews.Location = new System.Drawing.Point(444, 339);
-            this.btnAddNews.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddNews.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddNews.Name = "btnAddNews";
             this.btnAddNews.Size = new System.Drawing.Size(309, 28);
             this.btnAddNews.TabIndex = 3;
@@ -114,7 +114,7 @@ namespace PCBS03_3_student_housing
             // 
             this.tbxMessage.AcceptsReturn = true;
             this.tbxMessage.Location = new System.Drawing.Point(440, 27);
-            this.tbxMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxMessage.Margin = new System.Windows.Forms.Padding(4);
             this.tbxMessage.Multiline = true;
             this.tbxMessage.Name = "tbxMessage";
             this.tbxMessage.Size = new System.Drawing.Size(312, 162);
@@ -125,21 +125,21 @@ namespace PCBS03_3_student_housing
             this.lbxAdminNews.FormattingEnabled = true;
             this.lbxAdminNews.ItemHeight = 16;
             this.lbxAdminNews.Location = new System.Drawing.Point(8, 7);
-            this.lbxAdminNews.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbxAdminNews.Margin = new System.Windows.Forms.Padding(4);
             this.lbxAdminNews.Name = "lbxAdminNews";
             this.lbxAdminNews.Size = new System.Drawing.Size(423, 372);
             this.lbxAdminNews.TabIndex = 0;
             // 
-            // tabPage2
+            // tpAdminAddTenant
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(763, 394);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpAdminAddTenant.Location = new System.Drawing.Point(4, 25);
+            this.tpAdminAddTenant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tpAdminAddTenant.Name = "tpAdminAddTenant";
+            this.tpAdminAddTenant.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tpAdminAddTenant.Size = new System.Drawing.Size(763, 376);
+            this.tpAdminAddTenant.TabIndex = 1;
+            this.tpAdminAddTenant.Text = "Add tenant";
+            this.tpAdminAddTenant.UseVisualStyleBackColor = true;
             // 
             // button_logout
             // 
@@ -173,7 +173,7 @@ namespace PCBS03_3_student_housing
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tpAdminNews;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tpAdminAddTenant;
         private System.Windows.Forms.TextBox tbxAuthorName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddNews;
