@@ -32,7 +32,6 @@ namespace PCBS03_3_student_housing
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpStudentNews = new System.Windows.Forms.TabPage();
             this.lbxStudentNews = new System.Windows.Forms.ListBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button_logout = new System.Windows.Forms.Button();
             this.tpStudentComplaint = new System.Windows.Forms.TabPage();
             this.btnSubmitComplaint = new System.Windows.Forms.Button();
@@ -48,7 +47,6 @@ namespace PCBS03_3_student_housing
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tpStudentNews);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(15, 31);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Controls.Add(this.tpStudentComplaint);
@@ -85,16 +83,6 @@ namespace PCBS03_3_student_housing
             this.lbxStudentNews.Size = new System.Drawing.Size(744, 372);
             this.lbxStudentNews.TabIndex = 0;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(763, 394);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button_logout
             // lbxStudentNews
