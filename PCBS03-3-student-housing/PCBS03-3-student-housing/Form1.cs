@@ -25,14 +25,6 @@ namespace PCBS03_3_student_housing
         public Form1()
         {
             InitializeComponent();
-
-            //create hardcoded news pieces to test if it works
-            News newsTest = new News("This is a test message", "Maarten Hormes");
-            News newsTest1 = new News("This is a test message", "Luca Pulvirenti");
-            News newsTest2 = new News("This is a test message", "Alessandro Busacchi");
-            adminForm.newsList.Add(newsTest);
-            adminForm.newsList.Add(newsTest1);
-            adminForm.newsList.Add(newsTest2);
         }
 
         //login button clicked
