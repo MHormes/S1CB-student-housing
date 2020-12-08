@@ -31,13 +31,13 @@ namespace PCBS03_3_student_housing
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpAdminNews = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.lbxAdminNews = new System.Windows.Forms.ListBox();
-            this.tbxMessage = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAddNews = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.tbxAuthorName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnAddNews = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbxMessage = new System.Windows.Forms.TextBox();
+            this.lbxAdminNews = new System.Windows.Forms.ListBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tpAdminNews.SuspendLayout();
             this.SuspendLayout();
@@ -47,7 +47,7 @@ namespace PCBS03_3_student_housing
             this.tabControl1.Controls.Add(this.tpAdminNews);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(11, 11);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(578, 344);
@@ -62,50 +62,29 @@ namespace PCBS03_3_student_housing
             this.tpAdminNews.Controls.Add(this.tbxMessage);
             this.tpAdminNews.Controls.Add(this.lbxAdminNews);
             this.tpAdminNews.Location = new System.Drawing.Point(4, 22);
-            this.tpAdminNews.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpAdminNews.Margin = new System.Windows.Forms.Padding(2);
             this.tpAdminNews.Name = "tpAdminNews";
-            this.tpAdminNews.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpAdminNews.Padding = new System.Windows.Forms.Padding(2);
             this.tpAdminNews.Size = new System.Drawing.Size(570, 318);
             this.tpAdminNews.TabIndex = 0;
             this.tpAdminNews.Text = "Newsletter";
             this.tpAdminNews.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tbxAuthorName
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(570, 318);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tbxAuthorName.Location = new System.Drawing.Point(331, 178);
+            this.tbxAuthorName.Name = "tbxAuthorName";
+            this.tbxAuthorName.Size = new System.Drawing.Size(234, 20);
+            this.tbxAuthorName.TabIndex = 2;
             // 
-            // lbxAdminNews
+            // label2
             // 
-            this.lbxAdminNews.FormattingEnabled = true;
-            this.lbxAdminNews.Location = new System.Drawing.Point(6, 6);
-            this.lbxAdminNews.Name = "lbxAdminNews";
-            this.lbxAdminNews.Size = new System.Drawing.Size(318, 303);
-            this.lbxAdminNews.TabIndex = 0;
-            // 
-            // tbxMessage
-            // 
-            this.tbxMessage.AcceptsReturn = true;
-            this.tbxMessage.Location = new System.Drawing.Point(330, 22);
-            this.tbxMessage.Multiline = true;
-            this.tbxMessage.Name = "tbxMessage";
-            this.tbxMessage.Size = new System.Drawing.Size(235, 132);
-            this.tbxMessage.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(330, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Write your message below";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(333, 161);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Message written by";
             // 
             // btnAddNews
             // 
@@ -117,21 +96,42 @@ namespace PCBS03_3_student_housing
             this.btnAddNews.UseVisualStyleBackColor = true;
             this.btnAddNews.Click += new System.EventHandler(this.btnAddNews_Click);
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(333, 161);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Message written by";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(330, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Write your message below";
             // 
-            // tbxAuthorName
+            // tbxMessage
             // 
-            this.tbxAuthorName.Location = new System.Drawing.Point(331, 178);
-            this.tbxAuthorName.Name = "tbxAuthorName";
-            this.tbxAuthorName.Size = new System.Drawing.Size(234, 20);
-            this.tbxAuthorName.TabIndex = 5;
+            this.tbxMessage.AcceptsReturn = true;
+            this.tbxMessage.Location = new System.Drawing.Point(330, 22);
+            this.tbxMessage.Multiline = true;
+            this.tbxMessage.Name = "tbxMessage";
+            this.tbxMessage.Size = new System.Drawing.Size(235, 132);
+            this.tbxMessage.TabIndex = 1;
+            // 
+            // lbxAdminNews
+            // 
+            this.lbxAdminNews.FormattingEnabled = true;
+            this.lbxAdminNews.Location = new System.Drawing.Point(6, 6);
+            this.lbxAdminNews.Name = "lbxAdminNews";
+            this.lbxAdminNews.Size = new System.Drawing.Size(318, 303);
+            this.lbxAdminNews.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(570, 318);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // adminForm
             // 
@@ -139,7 +139,7 @@ namespace PCBS03_3_student_housing
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "adminForm";
             this.Text = "adminForm";
             this.tabControl1.ResumeLayout(false);

@@ -14,10 +14,12 @@ namespace PCBS03_3_student_housing
     {
         //Define class and List for admin newspage tab
         News news;
-        List<News> newsList = new List<News>();
+        public static List<News> newsList = new List<News>();
+
         public adminForm()
         {
             InitializeComponent();
+            UpdateNewsList();
         }
 
         //Add news to the news tab

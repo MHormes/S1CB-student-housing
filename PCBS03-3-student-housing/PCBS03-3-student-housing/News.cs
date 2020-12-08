@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PCBS03_3_student_housing
 {
-    class News
+    public class News
     {
         private string message;
         private string author;
@@ -17,7 +17,8 @@ namespace PCBS03_3_student_housing
                 author = name;
         }
 
-        public bool SetNews(string news, string name)
+/*       old method to make news object. Can still be used if the null or whitespace cheking needs to be inside of the class instead of the form
+ *       public bool SetNews(string news, string name)
         {
             if(!String.IsNullOrWhiteSpace(news) && !String.IsNullOrWhiteSpace(name))
             { 
@@ -29,7 +30,7 @@ namespace PCBS03_3_student_housing
             {
                 return false;
             }
-        }
+        }*/
 
         public string GetNews()
         {
