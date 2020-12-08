@@ -23,22 +23,21 @@ namespace PCBS03_3_student_housing
         //Add news to the news tab
         private void btnAddNews_Click(object sender, EventArgs e)
         {
-            news = new News();
-
-            //check if adding news was succesfull
-            if(news.SetNews(tbxMessage.Text, tbxAuthorName.Text))
+            //check if input is not empty
+            if(!String.IsNullOrWhiteSpace(tbxMessage.Text) && !String.IsNullOrWhiteSpace(tbxAuthorName.Text))
             {
+                //add news object
+                news = new News(tbxMessage.Text, tbxAuthorName.Text);
+                //add to the newslist
                 newsList.Add(news);
                 //update the listbox
                 UpdateNewsList();
             }
+            //one of 2 fields empty? show message
             else
             {
                 MessageBox.Show("Please fill in both fields before pressing the add button");
-            }
-            
-
-            
+            }   
         }
 
         // Method for updating the news listbox. 
