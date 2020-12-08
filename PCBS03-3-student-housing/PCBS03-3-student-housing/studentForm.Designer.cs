@@ -32,6 +32,8 @@ namespace PCBS03_3_student_housing
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpStudentNews = new System.Windows.Forms.TabPage();
             this.lbxStudentNews = new System.Windows.Forms.ListBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button_logout = new System.Windows.Forms.Button();
             this.tpStudentComplaint = new System.Windows.Forms.TabPage();
             this.btnSubmitComplaint = new System.Windows.Forms.Button();
             this.tbxStudentComplaint = new System.Windows.Forms.TextBox();
@@ -46,20 +48,27 @@ namespace PCBS03_3_student_housing
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tpStudentNews);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(15, 31);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Controls.Add(this.tpStudentComplaint);
             this.tabControl1.Location = new System.Drawing.Point(11, 11);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(578, 344);
+            this.tabControl1.Size = new System.Drawing.Size(771, 406);
             this.tabControl1.TabIndex = 0;
             // 
             // tpStudentNews
             // 
             this.tpStudentNews.Controls.Add(this.lbxStudentNews);
+            this.tpStudentNews.Location = new System.Drawing.Point(4, 25);
+            this.tpStudentNews.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpStudentNews.Location = new System.Drawing.Point(4, 22);
             this.tpStudentNews.Margin = new System.Windows.Forms.Padding(2);
             this.tpStudentNews.Name = "tpStudentNews";
+            this.tpStudentNews.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tpStudentNews.Size = new System.Drawing.Size(763, 377);
             this.tpStudentNews.Padding = new System.Windows.Forms.Padding(2);
             this.tpStudentNews.Size = new System.Drawing.Size(570, 318);
             this.tpStudentNews.TabIndex = 0;
@@ -69,10 +78,35 @@ namespace PCBS03_3_student_housing
             // lbxStudentNews
             // 
             this.lbxStudentNews.FormattingEnabled = true;
-            this.lbxStudentNews.Location = new System.Drawing.Point(6, 4);
+            this.lbxStudentNews.ItemHeight = 16;
+            this.lbxStudentNews.Location = new System.Drawing.Point(8, 5);
+            this.lbxStudentNews.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbxStudentNews.Name = "lbxStudentNews";
-            this.lbxStudentNews.Size = new System.Drawing.Size(559, 303);
+            this.lbxStudentNews.Size = new System.Drawing.Size(744, 372);
             this.lbxStudentNews.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(763, 394);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button_logout
+            // lbxStudentNews
+            // 
+            this.button_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button_logout.Location = new System.Drawing.Point(650, 12);
+            this.button_logout.Name = "button_logout";
+            this.button_logout.Size = new System.Drawing.Size(122, 30);
+            this.button_logout.TabIndex = 1;
+            this.button_logout.Text = "LOGOUT";
+            this.button_logout.UseVisualStyleBackColor = true;
+            this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
             // 
             // tpStudentComplaint
             // 
@@ -136,11 +170,13 @@ namespace PCBS03_3_student_housing
             // 
             // studentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_logout);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "studentForm";
             this.Text = "studentForm";
             this.tabControl1.ResumeLayout(false);
@@ -162,5 +198,6 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lbxStudentComplaint;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button_logout;
     }
 }

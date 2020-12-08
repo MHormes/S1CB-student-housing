@@ -55,5 +55,14 @@ namespace PCBS03_3_student_housing
                 lbxAdminNews.Items.Add(news.GetNews());
             }
         }
+
+        //logout button
+        private void button_logout_Click(object sender, EventArgs e)
+        {
+            Form1 nextForm = new Form1();
+            this.Hide();
+            nextForm.ShowDialog();
+            this.Close();
+        }
     }
 }

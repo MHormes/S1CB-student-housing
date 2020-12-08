@@ -40,6 +40,15 @@ namespace PCBS03_3_student_housing
             }
         }
 
+        //logout button
+        private void button_logout_Click(object sender, EventArgs e)
+        {
+            Form1 nextForm = new Form1();
+            this.Hide();
+            nextForm.ShowDialog();
+            this.Close();
+        }
+
         private void btnSubmitComplaint_Click_1(object sender, EventArgs e)
         {
             //check if the complaint is not empty
