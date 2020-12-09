@@ -123,18 +123,18 @@ namespace PCBS03_3_student_housing
             }
         }
 
+        //creates a border in order to better differenciate the form from any other applications behind it
         private void pnlBackground_Paint(object sender, PaintEventArgs e)
         {
             if (pnlBackground.BorderStyle == BorderStyle.FixedSingle)
             {
-                int thickness = 2;
-                int halfThickness = thickness / 2;
-                using (Pen p = new Pen(Color.FromArgb(66,66,66,1), thickness))
+                int borderThickness = 4;
+                using (Pen p = new Pen(Color.FromArgb(66,66,66), borderThickness))
                 {
-                    e.Graphics.DrawRectangle(p, new Rectangle(halfThickness,
-                                                              halfThickness,
-                                                              pnlBackground.ClientSize.Width - thickness,
-                                                              pnlBackground.ClientSize.Height - thickness));
+                    e.Graphics.DrawRectangle(p, new Rectangle((borderThickness/2),
+                                                              (borderThickness/2),
+                                                              pnlBackground.ClientSize.Width - borderThickness,
+                                                              pnlBackground.ClientSize.Height - borderThickness));
                 }
             }
         }

@@ -80,7 +80,7 @@ namespace PCBS03_3_student_housing
             this.lbxStudentNews.Location = new System.Drawing.Point(14, 9);
             this.lbxStudentNews.Margin = new System.Windows.Forms.Padding(7);
             this.lbxStudentNews.Name = "lbxStudentNews";
-            this.lbxStudentNews.Size = new System.Drawing.Size(1299, 671);
+            this.lbxStudentNews.Size = new System.Drawing.Size(1299, 642);
             this.lbxStudentNews.TabIndex = 0;
             // 
             // tpStudentComplaint
@@ -171,8 +171,9 @@ namespace PCBS03_3_student_housing
             this.pnlBackground.Location = new System.Drawing.Point(1, -1);
             this.pnlBackground.Margin = new System.Windows.Forms.Padding(4);
             this.pnlBackground.Name = "pnlBackground";
-            this.pnlBackground.Size = new System.Drawing.Size(1400, 902);
+            this.pnlBackground.Size = new System.Drawing.Size(1408, 907);
             this.pnlBackground.TabIndex = 8;
+            this.pnlBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBackground_Paint);
             // 
             // pnlBar
             // 
@@ -180,7 +181,7 @@ namespace PCBS03_3_student_housing
             this.pnlBar.Controls.Add(this.lblClose);
             this.pnlBar.Controls.Add(this.pnlDragBar);
             this.pnlBar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlBar.Location = new System.Drawing.Point(-1, -2);
+            this.pnlBar.Location = new System.Drawing.Point(0, 0);
             this.pnlBar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlBar.Name = "pnlBar";
             this.pnlBar.Size = new System.Drawing.Size(1400, 73);
@@ -204,10 +205,10 @@ namespace PCBS03_3_student_housing
             // 
             this.pnlDragBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.pnlDragBar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlDragBar.Location = new System.Drawing.Point(0, -2);
+            this.pnlDragBar.Location = new System.Drawing.Point(0, 0);
             this.pnlDragBar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDragBar.Name = "pnlDragBar";
-            this.pnlDragBar.Size = new System.Drawing.Size(1312, 71);
+            this.pnlDragBar.Size = new System.Drawing.Size(1326, 71);
             this.pnlDragBar.TabIndex = 9;
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
@@ -216,7 +217,6 @@ namespace PCBS03_3_student_housing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(76)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(1400, 896);
             this.Controls.Add(this.pnlBackground);
