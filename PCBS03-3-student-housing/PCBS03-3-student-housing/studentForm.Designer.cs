@@ -171,7 +171,7 @@ namespace PCBS03_3_student_housing
             this.pnlBackground.Location = new System.Drawing.Point(1, -1);
             this.pnlBackground.Margin = new System.Windows.Forms.Padding(4);
             this.pnlBackground.Name = "pnlBackground";
-            this.pnlBackground.Size = new System.Drawing.Size(1408, 907);
+            this.pnlBackground.Size = new System.Drawing.Size(1401, 884);
             this.pnlBackground.TabIndex = 8;
             this.pnlBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBackground_Paint);
             // 
@@ -184,7 +184,7 @@ namespace PCBS03_3_student_housing
             this.pnlBar.Location = new System.Drawing.Point(0, 0);
             this.pnlBar.Margin = new System.Windows.Forms.Padding(4);
             this.pnlBar.Name = "pnlBar";
-            this.pnlBar.Size = new System.Drawing.Size(1400, 73);
+            this.pnlBar.Size = new System.Drawing.Size(1422, 73);
             this.pnlBar.TabIndex = 8;
             // 
             // lblClose
@@ -192,7 +192,7 @@ namespace PCBS03_3_student_housing
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(1334, 2);
+            this.lblClose.Location = new System.Drawing.Point(1331, 5);
             this.lblClose.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(69, 60);
@@ -217,6 +217,7 @@ namespace PCBS03_3_student_housing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(76)))), ((int)(((byte)(207)))));
             this.ClientSize = new System.Drawing.Size(1400, 896);
             this.Controls.Add(this.pnlBackground);

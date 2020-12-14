@@ -91,6 +91,10 @@ namespace PCBS03_3_student_housing
         private void errorAccount()
         {
             MessageBox.Show("The account doesn't exist. Please retry.");
+            textBox_accountPassword.Clear();
+            textBox_accountPassword.Text = "Password";
+            textBox_accountPassword.ForeColor = Color.Gray;
+            textBox_accountPassword.TextAlign = HorizontalAlignment.Center;
             return;
         }
 
@@ -147,5 +151,55 @@ namespace PCBS03_3_student_housing
                 }
         }
 
+        private void textBox_accountName_Enter(object sender, EventArgs e)
+        {
+            if(textBox_accountName.Text == "Account name")
+            {
+                textBox_accountName.Text = "";
+                textBox_accountName.ForeColor = Color.Black;
+                textBox_accountName.TextAlign = HorizontalAlignment.Left;
+            }
+        } 
+
+        private void textBox_accountName_Leave(object sender, EventArgs e)
+        {
+            if(textBox_accountName.Text == "")
+            {
+                textBox_accountName.Text = "Account name";
+                textBox_accountName.ForeColor = Color.Gray;
+                textBox_accountName.TextAlign = HorizontalAlignment.Center;
+            }
+        }
+
+        private void textBox_accountPassword_Enter(object sender, EventArgs e)
+        {        
+            if (textBox_accountPassword.Text == "Password")
+            {
+                textBox_accountPassword.UseSystemPasswordChar = false;
+                textBox_accountPassword.Text = "";
+                textBox_accountPassword.ForeColor = Color.Black;
+                textBox_accountPassword.TextAlign = HorizontalAlignment.Left;
+                
+            }
+        }
+
+        private void textBox_accountPassword_Leave(object sender, EventArgs e)
+        {
+            if (textBox_accountPassword.Text == "")
+            {
+                
+                textBox_accountPassword.Text = "Password";
+                textBox_accountPassword.ForeColor = Color.Gray;
+                textBox_accountPassword.TextAlign = HorizontalAlignment.Center;
+               // textBox_accountPassword.PasswordChar = '•';
+                textBox_accountPassword.UseSystemPasswordChar = false;
+
+            }
+        }
+
+        private void pnlBackground_Click(object sender, EventArgs e)
+        {
+            textBox_defocus.Focus();
+        }
     }
 }
