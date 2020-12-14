@@ -46,6 +46,7 @@ namespace PCBS03_3_student_housing
             // label_loginTitle
             // 
             this.label_loginTitle.AutoSize = true;
+            this.label_loginTitle.BackColor = System.Drawing.Color.Transparent;
             this.label_loginTitle.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_loginTitle.ForeColor = System.Drawing.Color.White;
             this.label_loginTitle.Location = new System.Drawing.Point(256, 110);
@@ -67,6 +68,7 @@ namespace PCBS03_3_student_housing
             // label_accountName
             // 
             this.label_accountName.AutoSize = true;
+            this.label_accountName.BackColor = System.Drawing.Color.Transparent;
             this.label_accountName.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_accountName.ForeColor = System.Drawing.Color.White;
             this.label_accountName.Location = new System.Drawing.Point(178, 247);
@@ -79,6 +81,7 @@ namespace PCBS03_3_student_housing
             // label_accountPassword
             // 
             this.label_accountPassword.AutoSize = true;
+            this.label_accountPassword.BackColor = System.Drawing.Color.Transparent;
             this.label_accountPassword.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_accountPassword.ForeColor = System.Drawing.Color.White;
             this.label_accountPassword.Location = new System.Drawing.Point(178, 334);
@@ -168,6 +171,7 @@ namespace PCBS03_3_student_housing
             // 
             // Form1
             // 
+            this.AcceptButton = this.button_login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(76)))), ((int)(((byte)(207)))));
