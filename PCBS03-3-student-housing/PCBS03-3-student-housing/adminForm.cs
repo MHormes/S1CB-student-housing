@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Drawing2D;
+
 
 namespace PCBS03_3_student_housing
 {
@@ -20,6 +22,9 @@ namespace PCBS03_3_student_housing
         List<Complaint> adminComplaints = studentForm.complaintStudentList;
 
         Student student = new Student();
+
+        //mouse coords which are needed for GUI drag bar functionality
+        public Point mouseLocation;
 
         public adminForm()
         {
@@ -176,6 +181,51 @@ namespace PCBS03_3_student_housing
                     return;
                 }
             }
+        }
+
+        //updates mouse position when the panel is clicked
+        private void pnlDragBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseLocation = new Point(-e.X, -e.Y);
+        }
+
+        //updates window position based on the movement on mouse to simulate the default 'drag bar' that was removed due to design reasons
+        private void pnlDragBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Point mousePose = Control.MousePosition;
+                mousePose.Offset(mouseLocation.X, mouseLocation.Y);
+                Location = mousePose;
+            }
+        }
+
+        private void pnlBackground_Paint(object sender, PaintEventArgs e)
+        {
+            //creates a color gradient as the background to make the form more visually appealing
+            using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
+                                                           Color.FromArgb(138, 92, 251),
+                                                           Color.FromArgb(83, 47, 171),
+                                                           90F))
+            {
+                e.Graphics.FillRectangle(brush, this.ClientRectangle);
+            }
+
+            //creates a border in order to better differenciate the form from any other applications behind it
+            int borderThickness = 4;
+            using (Pen p = new Pen(Color.FromArgb(66, 66, 66), borderThickness))
+            {
+                e.Graphics.DrawRectangle(p, new Rectangle((borderThickness / 2),
+                                                          (borderThickness / 2),
+                                                          pnlBackground.ClientSize.Width - borderThickness,
+                                                          pnlBackground.ClientSize.Height - borderThickness));
+            }
+        }
+
+        //'X' icon used to close current form
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
