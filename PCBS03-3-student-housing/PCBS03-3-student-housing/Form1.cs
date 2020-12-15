@@ -238,5 +238,23 @@ namespace PCBS03_3_student_housing
         {
             lblClose.ForeColor = Color.White;
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            //form1 closed and go to admin form
+            adminForm nextForm = new adminForm();
+            this.Hide();
+            nextForm.ShowDialog();
+            this.Close();
+        }
+
+        private void btnStudent_Click(object sender, EventArgs e)
+        {
+            //form1 closed and go to student form
+            studentForm nextForm = new studentForm();
+            this.Hide();
+            nextForm.ShowDialog();
+            this.Close();
+        }
     }
 }

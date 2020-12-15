@@ -38,6 +38,8 @@ namespace PCBS03_3_student_housing
             this.textBox_defocus = new System.Windows.Forms.TextBox();
             this.pnlBar = new System.Windows.Forms.Panel();
             this.pnlDragBar = new System.Windows.Forms.Panel();
+            this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnStudent = new System.Windows.Forms.Button();
             this.pnlBackground.SuspendLayout();
             this.pnlBar.SuspendLayout();
             this.SuspendLayout();
@@ -120,12 +122,15 @@ namespace PCBS03_3_student_housing
             // pnlBackground
             // 
             this.pnlBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBackground.Controls.Add(this.btnStudent);
+            this.pnlBackground.Controls.Add(this.btnAdmin);
             this.pnlBackground.Controls.Add(this.textBox_defocus);
             this.pnlBackground.Controls.Add(this.pnlBar);
             this.pnlBackground.Controls.Add(this.button_login);
             this.pnlBackground.Controls.Add(this.textBox_accountPassword);
             this.pnlBackground.Controls.Add(this.label_loginTitle);
             this.pnlBackground.Controls.Add(this.textBox_accountName);
+            this.pnlBackground.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlBackground.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlBackground.Location = new System.Drawing.Point(-3, 0);
             this.pnlBackground.Margin = new System.Windows.Forms.Padding(4);
@@ -171,6 +176,36 @@ namespace PCBS03_3_student_housing
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
             // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Location = new System.Drawing.Point(536, 583);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(341, 45);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.TabStop = false;
+            this.btnAdmin.Text = "Admin quick access (dev)";
+            this.btnAdmin.UseVisualStyleBackColor = false;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
+            // btnStudent
+            // 
+            this.btnStudent.BackColor = System.Drawing.Color.Transparent;
+            this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudent.ForeColor = System.Drawing.Color.White;
+            this.btnStudent.Location = new System.Drawing.Point(14, 583);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(357, 45);
+            this.btnStudent.TabIndex = 0;
+            this.btnStudent.TabStop = false;
+            this.btnStudent.Text = "Student quick access (dev)";
+            this.btnStudent.UseVisualStyleBackColor = false;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
@@ -202,6 +237,8 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.Panel pnlBar;
         private System.Windows.Forms.Panel pnlDragBar;
         private System.Windows.Forms.TextBox textBox_defocus;
+        private System.Windows.Forms.Button btnAdmin;
+        private System.Windows.Forms.Button btnStudent;
     }
 }
 
