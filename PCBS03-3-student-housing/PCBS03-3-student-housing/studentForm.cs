@@ -145,5 +145,29 @@ namespace PCBS03_3_student_housing
                                                           pnlBackground.ClientSize.Height - borderThickness));
             }
         }
+
+        private void tpStudentComplaint_Paint(object sender, PaintEventArgs e)
+        {
+            ////creates a color gradient as the background to make the form more visually appealing
+            //using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
+            //                                               Color.FromArgb(138, 92, 251),
+            //                                               Color.FromArgb(83, 47, 171),
+            //                                               90F))
+            //{
+            //    e.Graphics.FillRectangle(brush, this.ClientRectangle);
+            //}
+        }
+
+        //dims the 'X' icon for visual feedback of hover
+        private void lblClose_MouseEnter(object sender, EventArgs e)
+        {
+            lblClose.ForeColor = Color.Gray;
+        }
+
+        //brightens the 'X' icon for visual feedback of lack of hover
+        private void lblClose_MouseLeave(object sender, EventArgs e)
+        {
+            lblClose.ForeColor = Color.White;
+        }
     }
 }

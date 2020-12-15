@@ -226,5 +226,17 @@ namespace PCBS03_3_student_housing
             textBox_accountName.Focus();
             //}
         }
+
+        //dims the 'X' icon for visual feedback of hover
+        private void lblClose_MouseEnter(object sender, EventArgs e)
+        {
+            lblClose.ForeColor = Color.Gray;
+        }
+
+        //brightens the 'X' icon for visual feedback of lack of hover
+        private void lblClose_MouseLeave(object sender, EventArgs e)
+        {
+            lblClose.ForeColor = Color.White;
+        }
     }
 }

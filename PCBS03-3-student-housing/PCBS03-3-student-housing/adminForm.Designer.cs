@@ -58,6 +58,7 @@ namespace PCBS03_3_student_housing
             this.pnlBar = new System.Windows.Forms.Panel();
             this.pnlDragBar = new System.Windows.Forms.Panel();
             this.lblClose = new System.Windows.Forms.Label();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tpAdminNews.SuspendLayout();
             this.tpAdminAddTenant.SuspendLayout();
@@ -97,10 +98,11 @@ namespace PCBS03_3_student_housing
             // 
             // tbxAuthorName
             // 
+            this.tbxAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxAuthorName.Location = new System.Drawing.Point(772, 397);
             this.tbxAuthorName.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.tbxAuthorName.Name = "tbxAuthorName";
-            this.tbxAuthorName.Size = new System.Drawing.Size(541, 35);
+            this.tbxAuthorName.Size = new System.Drawing.Size(541, 55);
             this.tbxAuthorName.TabIndex = 2;
             // 
             // label2
@@ -151,7 +153,7 @@ namespace PCBS03_3_student_housing
             this.lbxAdminNews.Location = new System.Drawing.Point(14, 13);
             this.lbxAdminNews.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.lbxAdminNews.Name = "lbxAdminNews";
-            this.lbxAdminNews.Size = new System.Drawing.Size(739, 642);
+            this.lbxAdminNews.Size = new System.Drawing.Size(739, 555);
             this.lbxAdminNews.TabIndex = 0;
             // 
             // tpAdminAddTenant
@@ -167,7 +169,7 @@ namespace PCBS03_3_student_housing
             this.tpAdminAddTenant.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tpAdminAddTenant.Name = "tpAdminAddTenant";
             this.tpAdminAddTenant.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tpAdminAddTenant.Size = new System.Drawing.Size(1329, 677);
+            this.tpAdminAddTenant.Size = new System.Drawing.Size(1329, 580);
             this.tpAdminAddTenant.TabIndex = 1;
             this.tpAdminAddTenant.Text = "Add tenant";
             this.tpAdminAddTenant.UseVisualStyleBackColor = true;
@@ -243,7 +245,7 @@ namespace PCBS03_3_student_housing
             this.listBox_tenants.Location = new System.Drawing.Point(12, 11);
             this.listBox_tenants.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.listBox_tenants.Name = "listBox_tenants";
-            this.listBox_tenants.Size = new System.Drawing.Size(739, 642);
+            this.listBox_tenants.Size = new System.Drawing.Size(739, 555);
             this.listBox_tenants.TabIndex = 1;
             // 
             // tpAdminComplaints
@@ -258,7 +260,7 @@ namespace PCBS03_3_student_housing
             this.tpAdminComplaints.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.tpAdminComplaints.Name = "tpAdminComplaints";
             this.tpAdminComplaints.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
-            this.tpAdminComplaints.Size = new System.Drawing.Size(1329, 677);
+            this.tpAdminComplaints.Size = new System.Drawing.Size(1329, 580);
             this.tpAdminComplaints.TabIndex = 2;
             this.tpAdminComplaints.Text = "Complaints";
             this.tpAdminComplaints.UseVisualStyleBackColor = true;
@@ -306,12 +308,15 @@ namespace PCBS03_3_student_housing
             // 
             // btnRefreshComplaints
             // 
-            this.btnRefreshComplaints.Location = new System.Drawing.Point(1062, 352);
+            this.btnRefreshComplaints.Font = new System.Drawing.Font("Arial", 25F);
+            this.btnRefreshComplaints.Location = new System.Drawing.Point(1176, 346);
             this.btnRefreshComplaints.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.btnRefreshComplaints.Name = "btnRefreshComplaints";
-            this.btnRefreshComplaints.Size = new System.Drawing.Size(252, 51);
-            this.btnRefreshComplaints.TabIndex = 1;
-            this.btnRefreshComplaints.Text = "Refresh complaints";
+            this.btnRefreshComplaints.Size = new System.Drawing.Size(134, 100);
+            this.btnRefreshComplaints.TabIndex = 0;
+            this.btnRefreshComplaints.TabStop = false;
+            this.btnRefreshComplaints.Text = "⟳";
+            this.btnRefreshComplaints.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnRefreshComplaints.UseVisualStyleBackColor = true;
             this.btnRefreshComplaints.Click += new System.EventHandler(this.btnRefreshComplaints_Click);
             // 
@@ -341,6 +346,7 @@ namespace PCBS03_3_student_housing
             // 
             this.pnlBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(76)))), ((int)(((byte)(207)))));
             this.pnlBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBackground.Controls.Add(this.lblHeader);
             this.pnlBackground.Controls.Add(this.button_logout);
             this.pnlBackground.Controls.Add(this.textBox_defocus);
             this.pnlBackground.Controls.Add(this.tabControl1);
@@ -400,6 +406,19 @@ namespace PCBS03_3_student_housing
             this.lblClose.Text = "✖";
             this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            this.lblClose.MouseEnter += new System.EventHandler(this.lblClose_MouseEnter);
+            this.lblClose.MouseLeave += new System.EventHandler(this.lblClose_MouseLeave);
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeader.Font = new System.Drawing.Font("Arial Black", 26F, System.Drawing.FontStyle.Bold);
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(91, 73);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(392, 112);
+            this.lblHeader.TabIndex = 9;
+            this.lblHeader.Text = "Admin";
             // 
             // adminForm
             // 
@@ -458,5 +477,6 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.Panel pnlBar;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Panel pnlDragBar;
+        private System.Windows.Forms.Label lblHeader;
     }
 }

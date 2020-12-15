@@ -33,6 +33,7 @@ namespace PCBS03_3_student_housing
             this.tpStudentNews = new System.Windows.Forms.TabPage();
             this.lbxStudentNews = new System.Windows.Forms.ListBox();
             this.tpStudentComplaint = new System.Windows.Forms.TabPage();
+            this.btnStudentRemoveComplaint = new System.Windows.Forms.Button();
             this.lbxStudentComplaint = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnSubmitComplaint = new System.Windows.Forms.Button();
@@ -43,7 +44,8 @@ namespace PCBS03_3_student_housing
             this.pnlBar = new System.Windows.Forms.Panel();
             this.lblClose = new System.Windows.Forms.Label();
             this.pnlDragBar = new System.Windows.Forms.Panel();
-            this.btnStudentRemoveComplaint = new System.Windows.Forms.Button();
+            this.tpStudentRules = new System.Windows.Forms.TabPage();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tpStudentNews.SuspendLayout();
             this.tpStudentComplaint.SuspendLayout();
@@ -55,11 +57,12 @@ namespace PCBS03_3_student_housing
             // 
             this.tabControl1.Controls.Add(this.tpStudentNews);
             this.tabControl1.Controls.Add(this.tpStudentComplaint);
-            this.tabControl1.Location = new System.Drawing.Point(21, 129);
+            this.tabControl1.Controls.Add(this.tpStudentRules);
+            this.tabControl1.Location = new System.Drawing.Point(21, 230);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1349, 736);
+            this.tabControl1.Size = new System.Drawing.Size(1349, 635);
             this.tabControl1.TabIndex = 0;
             // 
             // tpStudentNews
@@ -69,7 +72,7 @@ namespace PCBS03_3_student_housing
             this.tpStudentNews.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tpStudentNews.Name = "tpStudentNews";
             this.tpStudentNews.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tpStudentNews.Size = new System.Drawing.Size(1329, 679);
+            this.tpStudentNews.Size = new System.Drawing.Size(1329, 578);
             this.tpStudentNews.TabIndex = 0;
             this.tpStudentNews.Text = "Newsletter";
             this.tpStudentNews.UseVisualStyleBackColor = true;
@@ -81,11 +84,13 @@ namespace PCBS03_3_student_housing
             this.lbxStudentNews.Location = new System.Drawing.Point(14, 9);
             this.lbxStudentNews.Margin = new System.Windows.Forms.Padding(7);
             this.lbxStudentNews.Name = "lbxStudentNews";
-            this.lbxStudentNews.Size = new System.Drawing.Size(1299, 642);
+            this.lbxStudentNews.Size = new System.Drawing.Size(1299, 555);
             this.lbxStudentNews.TabIndex = 0;
             // 
             // tpStudentComplaint
             // 
+            this.tpStudentComplaint.BackColor = System.Drawing.Color.Transparent;
+            this.tpStudentComplaint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tpStudentComplaint.Controls.Add(this.btnStudentRemoveComplaint);
             this.tpStudentComplaint.Controls.Add(this.lbxStudentComplaint);
             this.tpStudentComplaint.Controls.Add(this.label2);
@@ -96,25 +101,36 @@ namespace PCBS03_3_student_housing
             this.tpStudentComplaint.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tpStudentComplaint.Name = "tpStudentComplaint";
             this.tpStudentComplaint.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tpStudentComplaint.Size = new System.Drawing.Size(1329, 679);
+            this.tpStudentComplaint.Size = new System.Drawing.Size(1329, 578);
             this.tpStudentComplaint.TabIndex = 1;
             this.tpStudentComplaint.Text = "Complaints";
-            this.tpStudentComplaint.UseVisualStyleBackColor = true;
+            this.tpStudentComplaint.Paint += new System.Windows.Forms.PaintEventHandler(this.tpStudentComplaint_Paint);
+            // 
+            // btnStudentRemoveComplaint
+            // 
+            this.btnStudentRemoveComplaint.Location = new System.Drawing.Point(505, 166);
+            this.btnStudentRemoveComplaint.Name = "btnStudentRemoveComplaint";
+            this.btnStudentRemoveComplaint.Size = new System.Drawing.Size(481, 54);
+            this.btnStudentRemoveComplaint.TabIndex = 5;
+            this.btnStudentRemoveComplaint.Text = "Remove your complaint";
+            this.btnStudentRemoveComplaint.UseVisualStyleBackColor = true;
+            this.btnStudentRemoveComplaint.Click += new System.EventHandler(this.btnStudentRemoveComplaint_Click);
             // 
             // lbxStudentComplaint
             // 
             this.lbxStudentComplaint.FormattingEnabled = true;
             this.lbxStudentComplaint.ItemHeight = 29;
-            this.lbxStudentComplaint.Location = new System.Drawing.Point(16, 281);
+            this.lbxStudentComplaint.Location = new System.Drawing.Point(16, 295);
             this.lbxStudentComplaint.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.lbxStudentComplaint.Name = "lbxStudentComplaint";
-            this.lbxStudentComplaint.Size = new System.Drawing.Size(970, 265);
+            this.lbxStudentComplaint.Size = new System.Drawing.Size(976, 265);
             this.lbxStudentComplaint.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 232);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(24, 249);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(386, 29);
@@ -123,7 +139,7 @@ namespace PCBS03_3_student_housing
             // 
             // btnSubmitComplaint
             // 
-            this.btnSubmitComplaint.Location = new System.Drawing.Point(509, 163);
+            this.btnSubmitComplaint.Location = new System.Drawing.Point(16, 166);
             this.btnSubmitComplaint.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnSubmitComplaint.Name = "btnSubmitComplaint";
             this.btnSubmitComplaint.Size = new System.Drawing.Size(481, 54);
@@ -144,6 +160,7 @@ namespace PCBS03_3_student_housing
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(9, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
@@ -166,6 +183,7 @@ namespace PCBS03_3_student_housing
             // pnlBackground
             // 
             this.pnlBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBackground.Controls.Add(this.lblHeader);
             this.pnlBackground.Controls.Add(this.button_logout);
             this.pnlBackground.Controls.Add(this.pnlBar);
             this.pnlBackground.Controls.Add(this.tabControl1);
@@ -202,6 +220,8 @@ namespace PCBS03_3_student_housing
             this.lblClose.Text = "✖";
             this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            this.lblClose.MouseEnter += new System.EventHandler(this.lblClose_MouseEnter);
+            this.lblClose.MouseLeave += new System.EventHandler(this.lblClose_MouseLeave);
             // 
             // pnlDragBar
             // 
@@ -215,15 +235,26 @@ namespace PCBS03_3_student_housing
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
             // 
-            // btnStudentRemoveComplaint
+            // tpStudentRules
             // 
-            this.btnStudentRemoveComplaint.Location = new System.Drawing.Point(218, 252);
-            this.btnStudentRemoveComplaint.Name = "btnStudentRemoveComplaint";
-            this.btnStudentRemoveComplaint.Size = new System.Drawing.Size(206, 23);
-            this.btnStudentRemoveComplaint.TabIndex = 5;
-            this.btnStudentRemoveComplaint.Text = "Remove your complaint";
-            this.btnStudentRemoveComplaint.UseVisualStyleBackColor = true;
-            this.btnStudentRemoveComplaint.Click += new System.EventHandler(this.btnStudentRemoveComplaint_Click);
+            this.tpStudentRules.Location = new System.Drawing.Point(10, 47);
+            this.tpStudentRules.Name = "tpStudentRules";
+            this.tpStudentRules.Padding = new System.Windows.Forms.Padding(3);
+            this.tpStudentRules.Size = new System.Drawing.Size(1329, 578);
+            this.tpStudentRules.TabIndex = 2;
+            this.tpStudentRules.Text = "Rules";
+            this.tpStudentRules.UseVisualStyleBackColor = true;
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeader.Font = new System.Drawing.Font("Arial Black", 26F, System.Drawing.FontStyle.Bold);
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(26, 100);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(928, 112);
+            this.lblHeader.TabIndex = 10;
+            this.lblHeader.Text = "Welcome, student";
             // 
             // studentForm
             // 
@@ -266,5 +297,7 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.Panel pnlDragBar;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Button btnStudentRemoveComplaint;
+        private System.Windows.Forms.TabPage tpStudentRules;
+        private System.Windows.Forms.Label lblHeader;
     }
 }
