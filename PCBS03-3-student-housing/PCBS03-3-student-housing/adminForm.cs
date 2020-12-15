@@ -155,7 +155,7 @@ namespace PCBS03_3_student_housing
                         MessageBox.Show("Please give a comment before clicking the button");
                         return;
                     }
-                    com.SetAdminComment(tbxComplaintComment.Text);
+                    com.AdminComment = tbxComplaintComment.Text;
                     MessageBox.Show($"Comment add to complaint: {com.GetComplaint()}");
                     UpdateComplaintList();
                     return;

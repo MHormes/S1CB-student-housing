@@ -15,7 +15,19 @@ namespace PCBS03_3_student_housing
         public Complaint(string complaint, string stName)
         {
             this.complaint = complaint;
-            this.stName = stName;
+            StName = stName;
+        }
+
+        public string AdminComment
+        {
+            set { this.adminComment = value; }
+            get { return this.adminComment; }
+        }
+
+        public string StName
+        {
+            private set { this.stName = value; }
+            get { return this.stName; }
         }
 
         public string GetComplaint()
@@ -25,21 +37,6 @@ namespace PCBS03_3_student_housing
                 return $"{complaint}";
             }
             return $"{complaint} - admin: ({adminComment})";
-        }
-
-        public string GetStName()
-        {
-            return this.stName;
-        }
-
-        public void SetAdminComment(string comment)
-        {
-            this.adminComment = comment;
-        }
-
-        public string GetAdminComment()
-        {
-            return this.adminComment;
-        }
+        }  
     }
 }

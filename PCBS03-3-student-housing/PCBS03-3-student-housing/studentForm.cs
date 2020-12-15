@@ -40,7 +40,6 @@ namespace PCBS03_3_student_housing
             //take all items and add them 1 by 1 in the Listbox.
             foreach (News news in newsStudentList)
             {
-                //THIS NEEDS AN EDIT. LISTBOX DOES NOT SUPPORT NEW LINES. THIS IS NEEDED!!!!!!!!!!!!!!!!!!
                 lbxStudentNews.Items.Add(news.GetNews());
             }
         }
@@ -78,9 +77,24 @@ namespace PCBS03_3_student_housing
             //take all items and check if this user submitted them. if so add to listbox
             foreach(Complaint comp in complaintStudentList)
             {
-                if (comp.GetStName() == Form1.studentName)
+                if (comp.StName == Form1.studentName)
                 {
                     lbxStudentComplaint.Items.Add(comp.GetComplaint());
+                }
+            }
+        }
+
+        //method for removing the selected complaint
+        private void btnStudentRemoveComplaint_Click(object sender, EventArgs e)
+        {
+            foreach (Complaint com in complaintStudentList)
+            {
+                if (com.GetComplaint() == (string)lbxStudentComplaint.SelectedItem)
+                {
+                    complaintStudentList.Remove(com);
+                    MessageBox.Show("You have remove your own complaint");
+                    UpdateComplaintList();
+                    return;
                 }
             }
         }
@@ -130,20 +144,6 @@ namespace PCBS03_3_student_housing
             //                                              pnlBackground.ClientSize.Width - borderThickness,
             //                                              pnlBackground.ClientSize.Height - borderThickness));
             //}
-        }
-
-        private void btnStudentRemoveComplaint_Click(object sender, EventArgs e)
-        {
-            foreach (Complaint com in complaintStudentList)
-            {
-                if (com.GetComplaint() == (string)lbxStudentComplaint.SelectedItem)
-                {
-                    complaintStudentList.Remove(com);
-                    MessageBox.Show("You have remove your own complaint");
-                    UpdateComplaintList();
-                    return;
-                }
-            }
         }
     }
 }
