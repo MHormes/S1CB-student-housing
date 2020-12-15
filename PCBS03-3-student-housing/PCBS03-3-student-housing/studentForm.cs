@@ -18,7 +18,7 @@ namespace PCBS03_3_student_housing
         List<News> newsStudentList = adminForm.newsList;
 
         //create complaint list, this list will be used in the adminForm. 
-        List<Complaint> complaintStudentList = new List<Complaint>();
+        public static List<Complaint> complaintStudentList = new List<Complaint>();
         Complaint complaint;
 
         //mouse coords which are needed for GUI drag bar functionality
@@ -54,6 +54,7 @@ namespace PCBS03_3_student_housing
             this.Close();
         }
 
+        //method for submitting a complaint
         private void btnSubmitComplaint_Click_1(object sender, EventArgs e)
         {
             //check if the complaint is not empty
