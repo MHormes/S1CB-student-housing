@@ -31,6 +31,7 @@ namespace PCBS03_3_student_housing
         //Add news to the news tab
         private void btnAddNews_Click(object sender, EventArgs e)
         {
+            
             //check if input is not empty
             if(!String.IsNullOrWhiteSpace(tbxMessage.Text) && !String.IsNullOrWhiteSpace(tbxAuthorName.Text))
             {
