@@ -201,5 +201,26 @@ namespace PCBS03_3_student_housing
         {
             textBox_defocus.Focus();
         }
+
+        private void textBox_accountPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                button_login.PerformClick();
+            }
+
+            if (e.KeyChar == (char)Keys.Tab)
+            {
+                textBox_accountName.Focus();
+            }
+        }
+
+        private void textBox_accountName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter || e.KeyChar == (char)Keys.Tab)
+            {
+                textBox_accountPassword.Focus();
+            }
+        }
     }
 }

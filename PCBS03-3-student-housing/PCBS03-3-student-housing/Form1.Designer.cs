@@ -35,9 +35,9 @@ namespace PCBS03_3_student_housing
             this.button_login = new System.Windows.Forms.Button();
             this.lblClose = new System.Windows.Forms.Label();
             this.pnlBackground = new System.Windows.Forms.Panel();
+            this.textBox_defocus = new System.Windows.Forms.TextBox();
             this.pnlBar = new System.Windows.Forms.Panel();
             this.pnlDragBar = new System.Windows.Forms.Panel();
-            this.textBox_defocus = new System.Windows.Forms.TextBox();
             this.pnlBackground.SuspendLayout();
             this.pnlBar.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +68,7 @@ namespace PCBS03_3_student_housing
             this.textBox_accountName.Text = "Account name";
             this.textBox_accountName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_accountName.Enter += new System.EventHandler(this.textBox_accountName_Enter);
+            this.textBox_accountName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_accountName_KeyPress);
             this.textBox_accountName.Leave += new System.EventHandler(this.textBox_accountName_Leave);
             // 
             // textBox_accountPassword
@@ -83,6 +84,7 @@ namespace PCBS03_3_student_housing
             this.textBox_accountPassword.Text = "Password";
             this.textBox_accountPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox_accountPassword.Enter += new System.EventHandler(this.textBox_accountPassword_Enter);
+            this.textBox_accountPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_accountPassword_KeyPress);
             this.textBox_accountPassword.Leave += new System.EventHandler(this.textBox_accountPassword_Leave);
             // 
             // button_login
@@ -93,7 +95,8 @@ namespace PCBS03_3_student_housing
             this.button_login.Margin = new System.Windows.Forms.Padding(5);
             this.button_login.Name = "button_login";
             this.button_login.Size = new System.Drawing.Size(215, 63);
-            this.button_login.TabIndex = 5;
+            this.button_login.TabIndex = 0;
+            this.button_login.TabStop = false;
             this.button_login.Text = "Login";
             this.button_login.UseVisualStyleBackColor = true;
             this.button_login.Click += new System.EventHandler(this.button_login_Click);
@@ -130,6 +133,16 @@ namespace PCBS03_3_student_housing
             this.pnlBackground.Click += new System.EventHandler(this.pnlBackground_Click);
             this.pnlBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBackground_Paint);
             // 
+            // textBox_defocus
+            // 
+            this.textBox_defocus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.textBox_defocus.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_defocus.Location = new System.Drawing.Point(0, 0);
+            this.textBox_defocus.Name = "textBox_defocus";
+            this.textBox_defocus.Size = new System.Drawing.Size(0, 11);
+            this.textBox_defocus.TabIndex = 0;
+            this.textBox_defocus.TabStop = false;
+            // 
             // pnlBar
             // 
             this.pnlBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
@@ -154,18 +167,8 @@ namespace PCBS03_3_student_housing
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
             // 
-            // textBox_defocus
-            // 
-            this.textBox_defocus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.textBox_defocus.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_defocus.Location = new System.Drawing.Point(0, 0);
-            this.textBox_defocus.Name = "textBox_defocus";
-            this.textBox_defocus.Size = new System.Drawing.Size(0, 11);
-            this.textBox_defocus.TabIndex = 9;
-            // 
             // Form1
             // 
-            this.AcceptButton = this.button_login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(76)))), ((int)(((byte)(207)))));
