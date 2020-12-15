@@ -12,9 +12,10 @@ namespace PCBS03_3_student_housing
         private string stName;
         private string adminComment;
 
-        public Complaint(string complaint)
+        public Complaint(string complaint, string stName)
         {
             this.complaint = complaint;
+            this.stName = stName;
         }
 
         public string GetComplaint()
