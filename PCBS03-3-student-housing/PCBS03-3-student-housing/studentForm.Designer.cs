@@ -43,6 +43,7 @@ namespace PCBS03_3_student_housing
             this.pnlBar = new System.Windows.Forms.Panel();
             this.lblClose = new System.Windows.Forms.Label();
             this.pnlDragBar = new System.Windows.Forms.Panel();
+            this.btnStudentRemoveComplaint = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tpStudentNews.SuspendLayout();
             this.tpStudentComplaint.SuspendLayout();
@@ -83,6 +84,7 @@ namespace PCBS03_3_student_housing
             // 
             // tpStudentComplaint
             // 
+            this.tpStudentComplaint.Controls.Add(this.btnStudentRemoveComplaint);
             this.tpStudentComplaint.Controls.Add(this.lbxStudentComplaint);
             this.tpStudentComplaint.Controls.Add(this.label2);
             this.tpStudentComplaint.Controls.Add(this.btnSubmitComplaint);
@@ -210,6 +212,16 @@ namespace PCBS03_3_student_housing
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
             // 
+            // btnStudentRemoveComplaint
+            // 
+            this.btnStudentRemoveComplaint.Location = new System.Drawing.Point(218, 252);
+            this.btnStudentRemoveComplaint.Name = "btnStudentRemoveComplaint";
+            this.btnStudentRemoveComplaint.Size = new System.Drawing.Size(206, 23);
+            this.btnStudentRemoveComplaint.TabIndex = 5;
+            this.btnStudentRemoveComplaint.Text = "Remove your complaint";
+            this.btnStudentRemoveComplaint.UseVisualStyleBackColor = true;
+            this.btnStudentRemoveComplaint.Click += new System.EventHandler(this.btnStudentRemoveComplaint_Click);
+            // 
             // studentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -250,5 +262,6 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.Panel pnlBar;
         private System.Windows.Forms.Panel pnlDragBar;
         private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Button btnStudentRemoveComplaint;
     }
 }

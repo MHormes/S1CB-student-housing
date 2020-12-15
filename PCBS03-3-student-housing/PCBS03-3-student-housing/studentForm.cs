@@ -131,5 +131,19 @@ namespace PCBS03_3_student_housing
             //                                              pnlBackground.ClientSize.Height - borderThickness));
             //}
         }
+
+        private void btnStudentRemoveComplaint_Click(object sender, EventArgs e)
+        {
+            foreach (Complaint com in complaintStudentList)
+            {
+                if (com.GetComplaint() == (string)lbxStudentComplaint.SelectedItem)
+                {
+                    complaintStudentList.Remove(com);
+                    MessageBox.Show("You have remove your own complaint");
+                    UpdateComplaintList();
+                    return;
+                }
+            }
+        }
     }
 }

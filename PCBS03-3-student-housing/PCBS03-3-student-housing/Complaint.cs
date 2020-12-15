@@ -10,6 +10,7 @@ namespace PCBS03_3_student_housing
     {
         private string complaint;
         private string stName;
+        private string adminComment;
 
         public Complaint(string complaint, string stName)
         {
@@ -19,12 +20,26 @@ namespace PCBS03_3_student_housing
 
         public string GetComplaint()
         {
-            return $"{complaint} - {stName}";
+            if (String.IsNullOrWhiteSpace(adminComment))
+            {
+                return $"{complaint} - {stName}";
+            }
+            return $"{complaint} - {stName} - admin: ({adminComment})";
         }
 
         public string GetStName()
         {
             return this.stName;
+        }
+
+        public void SetAdminComment(string comment)
+        {
+            this.adminComment = comment;
+        }
+
+        public string GetAdminComment()
+        {
+            return this.adminComment;
         }
     }
 }

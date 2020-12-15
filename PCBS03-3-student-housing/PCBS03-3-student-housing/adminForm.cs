@@ -25,6 +25,7 @@ namespace PCBS03_3_student_housing
         {
             InitializeComponent();
             UpdateNewsList();
+            UpdateComplaintList();
         }
 
         //Add news to the news tab
@@ -125,6 +126,54 @@ namespace PCBS03_3_student_housing
             foreach (Tuple<string, string> student in studentList)
             {
                 listBox_tenants.Items.Add(student.Item1 + " - " + student.Item2);
+            }
+        }
+
+        private void UpdateComplaintList()
+        {
+            lbxAdminComplaint.Items.Clear();
+
+            foreach (Complaint com in adminComplaints)
+            {
+                lbxAdminComplaint.Items.Add(com.GetComplaint());
+            }
+        }
+
+        private void btnRefreshComplaints_Click(object sender, EventArgs e)
+        {
+            UpdateComplaintList();
+        }
+
+        private void btnAddComplaintComment_Click(object sender, EventArgs e)
+        {
+            foreach(Complaint com in adminComplaints)
+            {
+                if(com.GetComplaint() == (string)lbxAdminComplaint.SelectedItem)
+                {
+                    if (String.IsNullOrWhiteSpace(tbxComplaintComment.Text))
+                    {
+                        MessageBox.Show("Please give a comment before clicking the button");
+                        return;
+                    }
+                    com.SetAdminComment(tbxComplaintComment.Text);
+                    MessageBox.Show($"Comment add to complaint: {com.GetComplaint()}");
+                    UpdateComplaintList();
+                    return;
+                }
+            }
+        }
+
+        private void btnCheckComplaint_Click(object sender, EventArgs e)
+        {
+            foreach(Complaint com in adminComplaints)
+            {
+                if(com.GetComplaint() == (string)lbxAdminComplaint.SelectedItem)
+                {
+                    adminComplaints.Remove(com);
+                    MessageBox.Show("Complaint checked of as done");
+                    UpdateComplaintList();
+                    return;
+                }
             }
         }
     }
