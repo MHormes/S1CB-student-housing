@@ -10,21 +10,33 @@ namespace PCBS03_3_student_housing
     {
         private string complaint;
         private string stName;
+        private string adminComment;
 
         public Complaint(string complaint, string stName)
         {
             this.complaint = complaint;
-            this.stName = stName;
+            StName = stName;
+        }
+
+        public string AdminComment
+        {
+            set { this.adminComment = value; }
+            get { return this.adminComment; }
+        }
+
+        public string StName
+        {
+            private set { this.stName = value; }
+            get { return this.stName; }
         }
 
         public string GetComplaint()
         {
-            return $"{complaint} - {stName}";
-        }
-
-        public string GetStName()
-        {
-            return this.stName;
-        }
+            if (String.IsNullOrWhiteSpace(adminComment))
+            {
+                return $"{complaint}";
+            }
+            return $"{complaint} - admin: ({adminComment})";
+        }  
     }
 }
