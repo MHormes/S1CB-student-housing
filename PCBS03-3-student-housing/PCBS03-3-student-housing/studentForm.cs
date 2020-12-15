@@ -122,14 +122,14 @@ namespace PCBS03_3_student_housing
             }
 
             //creates a border in order to better differenciate the form from any other applications behind it
-            //int borderThickness = 4;
-            //using (Pen p = new Pen(Color.FromArgb(66, 66, 66), borderThickness))
-            //{
-            //    e.Graphics.DrawRectangle(p, new Rectangle((borderThickness / 2),
-            //                                              (borderThickness / 2),
-            //                                              pnlBackground.ClientSize.Width - borderThickness,
-            //                                              pnlBackground.ClientSize.Height - borderThickness));
-            //}
+            int borderThickness = 4;
+            using (Pen p = new Pen(Color.FromArgb(66, 66, 66), borderThickness))
+            {
+                e.Graphics.DrawRectangle(p, new Rectangle((borderThickness / 2),
+                                                          (borderThickness / 2),
+                                                          pnlBackground.ClientSize.Width - borderThickness,
+                                                          pnlBackground.ClientSize.Height - borderThickness));
+            }
         }
     }
 }

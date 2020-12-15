@@ -142,6 +142,7 @@ namespace PCBS03_3_student_housing
             this.textBox_defocus.Size = new System.Drawing.Size(0, 11);
             this.textBox_defocus.TabIndex = 0;
             this.textBox_defocus.TabStop = false;
+            this.textBox_defocus.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_defocus_KeyDown);
             // 
             // pnlBar
             // 

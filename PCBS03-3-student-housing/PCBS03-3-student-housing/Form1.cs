@@ -175,11 +175,10 @@ namespace PCBS03_3_student_housing
         {        
             if (textBox_accountPassword.Text == "Password")
             {
-                textBox_accountPassword.UseSystemPasswordChar = false;
-                textBox_accountPassword.Text = "";
+                textBox_accountPassword.UseSystemPasswordChar = true;
+                textBox_accountPassword.Clear();
                 textBox_accountPassword.ForeColor = Color.Black;
-                textBox_accountPassword.TextAlign = HorizontalAlignment.Left;
-                
+                textBox_accountPassword.TextAlign = HorizontalAlignment.Left;  
             }
         }
 
@@ -187,14 +186,11 @@ namespace PCBS03_3_student_housing
         {
             if (textBox_accountPassword.Text == "")
             {
-                
+                textBox_accountPassword.UseSystemPasswordChar = false;
                 textBox_accountPassword.Text = "Password";
                 textBox_accountPassword.ForeColor = Color.Gray;
                 textBox_accountPassword.TextAlign = HorizontalAlignment.Center;
-               // textBox_accountPassword.PasswordChar = '•';
-                textBox_accountPassword.UseSystemPasswordChar = false;
-
-            }
+            } 
         }
 
         private void pnlBackground_Click(object sender, EventArgs e)
@@ -221,6 +217,14 @@ namespace PCBS03_3_student_housing
             {
                 textBox_accountPassword.Focus();
             }
+        }
+
+        private void textBox_defocus_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if (e.KeyChar == (char)Keys.Enter || e.KeyChar == (char)Keys.Tab)
+            //{
+            textBox_accountName.Focus();
+            //}
         }
     }
 }
