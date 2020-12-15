@@ -54,21 +54,21 @@ namespace PCBS03_3_student_housing
             // 
             this.tabControl1.Controls.Add(this.tpStudentNews);
             this.tabControl1.Controls.Add(this.tpStudentComplaint);
-            this.tabControl1.Location = new System.Drawing.Point(21, 129);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl1.Location = new System.Drawing.Point(9, 58);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1349, 736);
+            this.tabControl1.Size = new System.Drawing.Size(578, 330);
             this.tabControl1.TabIndex = 0;
             // 
             // tpStudentNews
             // 
             this.tpStudentNews.Controls.Add(this.lbxStudentNews);
-            this.tpStudentNews.Location = new System.Drawing.Point(10, 47);
-            this.tpStudentNews.Margin = new System.Windows.Forms.Padding(4);
+            this.tpStudentNews.Location = new System.Drawing.Point(4, 22);
+            this.tpStudentNews.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpStudentNews.Name = "tpStudentNews";
-            this.tpStudentNews.Padding = new System.Windows.Forms.Padding(4);
-            this.tpStudentNews.Size = new System.Drawing.Size(1329, 679);
+            this.tpStudentNews.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpStudentNews.Size = new System.Drawing.Size(570, 304);
             this.tpStudentNews.TabIndex = 0;
             this.tpStudentNews.Text = "Newsletter";
             this.tpStudentNews.UseVisualStyleBackColor = true;
@@ -76,11 +76,9 @@ namespace PCBS03_3_student_housing
             // lbxStudentNews
             // 
             this.lbxStudentNews.FormattingEnabled = true;
-            this.lbxStudentNews.ItemHeight = 29;
-            this.lbxStudentNews.Location = new System.Drawing.Point(14, 9);
-            this.lbxStudentNews.Margin = new System.Windows.Forms.Padding(7);
+            this.lbxStudentNews.Location = new System.Drawing.Point(6, 4);
             this.lbxStudentNews.Name = "lbxStudentNews";
-            this.lbxStudentNews.Size = new System.Drawing.Size(1299, 642);
+            this.lbxStudentNews.Size = new System.Drawing.Size(559, 290);
             this.lbxStudentNews.TabIndex = 0;
             // 
             // tpStudentComplaint
@@ -90,11 +88,11 @@ namespace PCBS03_3_student_housing
             this.tpStudentComplaint.Controls.Add(this.btnSubmitComplaint);
             this.tpStudentComplaint.Controls.Add(this.tbxStudentComplaint);
             this.tpStudentComplaint.Controls.Add(this.label1);
-            this.tpStudentComplaint.Location = new System.Drawing.Point(10, 47);
-            this.tpStudentComplaint.Margin = new System.Windows.Forms.Padding(4);
+            this.tpStudentComplaint.Location = new System.Drawing.Point(4, 22);
+            this.tpStudentComplaint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tpStudentComplaint.Name = "tpStudentComplaint";
-            this.tpStudentComplaint.Padding = new System.Windows.Forms.Padding(4);
-            this.tpStudentComplaint.Size = new System.Drawing.Size(1329, 679);
+            this.tpStudentComplaint.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpStudentComplaint.Size = new System.Drawing.Size(570, 304);
             this.tpStudentComplaint.TabIndex = 1;
             this.tpStudentComplaint.Text = "Complaints";
             this.tpStudentComplaint.UseVisualStyleBackColor = true;
@@ -102,29 +100,28 @@ namespace PCBS03_3_student_housing
             // lbxStudentComplaint
             // 
             this.lbxStudentComplaint.FormattingEnabled = true;
-            this.lbxStudentComplaint.ItemHeight = 29;
-            this.lbxStudentComplaint.Location = new System.Drawing.Point(16, 281);
-            this.lbxStudentComplaint.Margin = new System.Windows.Forms.Padding(5);
+            this.lbxStudentComplaint.Location = new System.Drawing.Point(7, 126);
+            this.lbxStudentComplaint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbxStudentComplaint.Name = "lbxStudentComplaint";
-            this.lbxStudentComplaint.Size = new System.Drawing.Size(970, 265);
+            this.lbxStudentComplaint.Size = new System.Drawing.Size(418, 121);
             this.lbxStudentComplaint.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 232);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Location = new System.Drawing.Point(4, 104);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(386, 29);
+            this.label2.Size = new System.Drawing.Size(168, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Your complaints still under revision";
             // 
             // btnSubmitComplaint
             // 
-            this.btnSubmitComplaint.Location = new System.Drawing.Point(606, 163);
-            this.btnSubmitComplaint.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSubmitComplaint.Location = new System.Drawing.Point(218, 73);
+            this.btnSubmitComplaint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSubmitComplaint.Name = "btnSubmitComplaint";
-            this.btnSubmitComplaint.Size = new System.Drawing.Size(383, 54);
+            this.btnSubmitComplaint.Size = new System.Drawing.Size(206, 24);
             this.btnSubmitComplaint.TabIndex = 2;
             this.btnSubmitComplaint.Text = "Submit your complaint for revision";
             this.btnSubmitComplaint.UseVisualStyleBackColor = true;
@@ -132,30 +129,30 @@ namespace PCBS03_3_student_housing
             // 
             // tbxStudentComplaint
             // 
-            this.tbxStudentComplaint.Location = new System.Drawing.Point(16, 42);
-            this.tbxStudentComplaint.Margin = new System.Windows.Forms.Padding(5);
+            this.tbxStudentComplaint.Location = new System.Drawing.Point(7, 19);
+            this.tbxStudentComplaint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxStudentComplaint.Multiline = true;
             this.tbxStudentComplaint.Name = "tbxStudentComplaint";
-            this.tbxStudentComplaint.Size = new System.Drawing.Size(970, 107);
+            this.tbxStudentComplaint.Size = new System.Drawing.Size(418, 50);
             this.tbxStudentComplaint.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(4, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 29);
+            this.label1.Size = new System.Drawing.Size(137, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Write your complaint below:";
             // 
             // button_logout
             // 
             this.button_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button_logout.Location = new System.Drawing.Point(1146, 100);
-            this.button_logout.Margin = new System.Windows.Forms.Padding(5);
+            this.button_logout.Location = new System.Drawing.Point(491, 45);
+            this.button_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(214, 54);
+            this.button_logout.Size = new System.Drawing.Size(92, 24);
             this.button_logout.TabIndex = 1;
             this.button_logout.Text = "LOGOUT";
             this.button_logout.UseVisualStyleBackColor = true;
@@ -168,10 +165,10 @@ namespace PCBS03_3_student_housing
             this.pnlBackground.Controls.Add(this.pnlBar);
             this.pnlBackground.Controls.Add(this.tabControl1);
             this.pnlBackground.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlBackground.Location = new System.Drawing.Point(1, -1);
-            this.pnlBackground.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlBackground.Location = new System.Drawing.Point(0, 0);
+            this.pnlBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlBackground.Name = "pnlBackground";
-            this.pnlBackground.Size = new System.Drawing.Size(1401, 884);
+            this.pnlBackground.Size = new System.Drawing.Size(602, 397);
             this.pnlBackground.TabIndex = 8;
             this.pnlBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBackground_Paint);
             // 
@@ -182,9 +179,9 @@ namespace PCBS03_3_student_housing
             this.pnlBar.Controls.Add(this.pnlDragBar);
             this.pnlBar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlBar.Location = new System.Drawing.Point(0, 0);
-            this.pnlBar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlBar.Name = "pnlBar";
-            this.pnlBar.Size = new System.Drawing.Size(1422, 73);
+            this.pnlBar.Size = new System.Drawing.Size(609, 33);
             this.pnlBar.TabIndex = 8;
             // 
             // lblClose
@@ -192,10 +189,10 @@ namespace PCBS03_3_student_housing
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.White;
-            this.lblClose.Location = new System.Drawing.Point(1331, 5);
-            this.lblClose.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClose.Location = new System.Drawing.Point(570, 2);
+            this.lblClose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(69, 60);
+            this.lblClose.Size = new System.Drawing.Size(30, 27);
             this.lblClose.TabIndex = 6;
             this.lblClose.Text = "✖";
             this.lblClose.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -206,24 +203,24 @@ namespace PCBS03_3_student_housing
             this.pnlDragBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.pnlDragBar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlDragBar.Location = new System.Drawing.Point(0, 0);
-            this.pnlDragBar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlDragBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlDragBar.Name = "pnlDragBar";
-            this.pnlDragBar.Size = new System.Drawing.Size(1326, 71);
+            this.pnlDragBar.Size = new System.Drawing.Size(568, 32);
             this.pnlDragBar.TabIndex = 9;
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
             // 
             // studentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(76)))), ((int)(((byte)(207)))));
-            this.ClientSize = new System.Drawing.Size(1400, 896);
+            this.ClientSize = new System.Drawing.Size(600, 402);
             this.Controls.Add(this.pnlBackground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.MinimumSize = new System.Drawing.Size(1400, 896);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(600, 402);
             this.Name = "studentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "studentForm";

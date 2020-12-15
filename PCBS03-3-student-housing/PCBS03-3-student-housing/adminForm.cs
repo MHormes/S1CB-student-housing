@@ -16,6 +16,9 @@ namespace PCBS03_3_student_housing
         News news;
         public static List<News> newsList = new List<News>();
 
+        //get studentComplaint list
+        List<Complaint> adminComplaints = studentForm.complaintStudentList;
+
         Student student = new Student();
 
         public adminForm()
@@ -53,7 +56,6 @@ namespace PCBS03_3_student_housing
             //take all items and add them 1 by 1 in the Listbox.
             foreach(News news in newsList)
             {
-                //THIS NEEDS AN EDIT. LISTBOX DOES NOT SUPPORT NEW LINES. THIS IS NEEDED!!!!!!!!!!!!!!!!!!
                 lbxAdminNews.Items.Add(news.GetNews());
             }
         }
