@@ -12,19 +12,18 @@ namespace PCBS03_3_student_housing
         private string stName;
         private string adminComment;
 
-        public Complaint(string complaint, string stName)
+        public Complaint(string complaint)
         {
             this.complaint = complaint;
-            this.stName = stName;
         }
 
         public string GetComplaint()
         {
             if (String.IsNullOrWhiteSpace(adminComment))
             {
-                return $"{complaint} - {stName}";
+                return $"{complaint}";
             }
-            return $"{complaint} - {stName} - admin: ({adminComment})";
+            return $"{complaint} - admin: ({adminComment})";
         }
 
         public string GetStName()
