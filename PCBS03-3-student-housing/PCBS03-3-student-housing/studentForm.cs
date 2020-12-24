@@ -29,6 +29,7 @@ namespace PCBS03_3_student_housing
             InitializeComponent();
             UpdateNewsList();
             UpdateComplaintList();
+            //lblHeader.Text = $"Welcome, {StudentName}";
         }
 
         // Method for updating the news listbox. 

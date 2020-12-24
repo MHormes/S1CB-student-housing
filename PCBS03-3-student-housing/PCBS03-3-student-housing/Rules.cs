@@ -8,25 +8,13 @@ namespace PCBS03_3_student_housing
 {
     class Rules
     {
-        private string title;
-        private string rule;
+        private String Title;
+        private String Rule;
 
-        public Rules(string title, string rule)
+        public Rules(String title, String rule)
         {
             Title = title;
             Rule = rule;
-        }
-
-        public string Title
-        {
-            set { this.title = value; }
-            get { return title;  }
-        }
-
-        public string Rule
-        {
-            set { this.rule = value; }
-            get { return rule; }
         }
     }
 }

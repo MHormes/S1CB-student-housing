@@ -39,13 +39,13 @@ namespace PCBS03_3_student_housing
             this.btnSubmitComplaint = new System.Windows.Forms.Button();
             this.tbxStudentComplaint = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.tpStudentRules = new System.Windows.Forms.TabPage();
             this.button_logout = new System.Windows.Forms.Button();
             this.pnlBackground = new System.Windows.Forms.Panel();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.pnlBar = new System.Windows.Forms.Panel();
             this.lblClose = new System.Windows.Forms.Label();
             this.pnlDragBar = new System.Windows.Forms.Panel();
-            this.tpStudentRules = new System.Windows.Forms.TabPage();
-            this.lblHeader = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tpStudentNews.SuspendLayout();
             this.tpStudentComplaint.SuspendLayout();
@@ -168,23 +168,34 @@ namespace PCBS03_3_student_housing
             this.label1.TabIndex = 0;
             this.label1.Text = "Write your complaint below:";
             // 
+            // tpStudentRules
+            // 
+            this.tpStudentRules.Location = new System.Drawing.Point(10, 47);
+            this.tpStudentRules.Name = "tpStudentRules";
+            this.tpStudentRules.Padding = new System.Windows.Forms.Padding(3);
+            this.tpStudentRules.Size = new System.Drawing.Size(1329, 578);
+            this.tpStudentRules.TabIndex = 2;
+            this.tpStudentRules.Text = "Rules";
+            this.tpStudentRules.UseVisualStyleBackColor = true;
+            // 
             // button_logout
             // 
-            this.button_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button_logout.Location = new System.Drawing.Point(1146, 100);
+            this.button_logout.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.button_logout.Location = new System.Drawing.Point(1204, 82);
             this.button_logout.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(215, 54);
+            this.button_logout.Size = new System.Drawing.Size(181, 53);
             this.button_logout.TabIndex = 1;
-            this.button_logout.Text = "LOGOUT";
+            this.button_logout.TabStop = false;
+            this.button_logout.Text = "Logout ➔";
             this.button_logout.UseVisualStyleBackColor = true;
             this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
             // 
             // pnlBackground
             // 
             this.pnlBackground.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlBackground.Controls.Add(this.lblHeader);
             this.pnlBackground.Controls.Add(this.button_logout);
+            this.pnlBackground.Controls.Add(this.lblHeader);
             this.pnlBackground.Controls.Add(this.pnlBar);
             this.pnlBackground.Controls.Add(this.tabControl1);
             this.pnlBackground.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -194,6 +205,17 @@ namespace PCBS03_3_student_housing
             this.pnlBackground.Size = new System.Drawing.Size(1403, 898);
             this.pnlBackground.TabIndex = 8;
             this.pnlBackground.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBackground_Paint);
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeader.Font = new System.Drawing.Font("Arial Black", 26F, System.Drawing.FontStyle.Bold);
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(26, 100);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(928, 112);
+            this.lblHeader.TabIndex = 10;
+            this.lblHeader.Text = "Welcome, student";
             // 
             // pnlBar
             // 
@@ -234,27 +256,6 @@ namespace PCBS03_3_student_housing
             this.pnlDragBar.TabIndex = 9;
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
-            // 
-            // tpStudentRules
-            // 
-            this.tpStudentRules.Location = new System.Drawing.Point(10, 47);
-            this.tpStudentRules.Name = "tpStudentRules";
-            this.tpStudentRules.Padding = new System.Windows.Forms.Padding(3);
-            this.tpStudentRules.Size = new System.Drawing.Size(1329, 578);
-            this.tpStudentRules.TabIndex = 2;
-            this.tpStudentRules.Text = "Rules";
-            this.tpStudentRules.UseVisualStyleBackColor = true;
-            // 
-            // lblHeader
-            // 
-            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblHeader.Font = new System.Drawing.Font("Arial Black", 26F, System.Drawing.FontStyle.Bold);
-            this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(26, 100);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(928, 112);
-            this.lblHeader.TabIndex = 10;
-            this.lblHeader.Text = "Welcome, student";
             // 
             // studentForm
             // 
