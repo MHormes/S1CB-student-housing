@@ -25,6 +25,7 @@ namespace PCBS03_3_student_housing
         List<Complaint> adminComplaints = studentForm.complaintStudentList;
 
         Student student = new Student();
+        List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
 
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
@@ -36,6 +37,7 @@ namespace PCBS03_3_student_housing
             UpdateNewsList();
             UpdateComplaintList();
             UpdateAnnouncementList();
+            UpdateStudentList();
         }
 
         //Add news to the news tab
@@ -129,7 +131,6 @@ namespace PCBS03_3_student_housing
         {
             //listbox cleared
             listBox_tenants.Items.Clear();
-            List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
             //new list
             studentList = student.getStudentList();
 

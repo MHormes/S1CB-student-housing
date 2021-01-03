@@ -16,10 +16,10 @@ namespace PCBS03_3_student_housing
         //string to pass the username to an other form for later use
         public static string studentName;
 
+        Student student = new Student();
+
         //account names and passwords
         private string adminNamePass = "admin";
-        private string studentNamePass = "student";
-        private string studentNamePass1 = "student1";
 
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
@@ -58,12 +58,30 @@ namespace PCBS03_3_student_housing
                     return;
                 }
             }
-            //EDIT THIS USING THE STUDENT LIST!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            //check if account name is student
-            else if (textBox_accountName.Text == studentNamePass || textBox_accountName.Text == studentNamePass1)
+
+            else 
             {
+                List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
+                //new list
+                studentList = student.getStudentList();
+
+                bool found = student.itContainsStudent(textBox_accountName.Text);
+                int index = -1;
+
+                if (!found)
+                {
+                    MessageBox.Show("The account doesn't exist. Please retry.");
+                    return;
+                }
+
+                foreach(Tuple<string, string> stud in studentList)
+                {
+                    if (textBox_accountName.Text == stud.Item1)
+                        index = studentList.IndexOf(stud);
+                }
+                    
                 //check if student password is correct
-                if (textBox_accountPassword.Text == studentNamePass || textBox_accountPassword.Text == studentNamePass1)
+                if (textBox_accountPassword.Text == studentList.ElementAt(index).Item2)
                 {
                     studentName = textBox_accountName.Text;
                     //form1 closed and go to student form
@@ -78,12 +96,6 @@ namespace PCBS03_3_student_housing
                     errorPassword();
                     return;
                 }
-            }
-            //account inserted is not admin or student -> error
-            else
-            {
-                errorAccount();
-                return;
             }
         }
 

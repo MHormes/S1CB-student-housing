@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PCBS03_3_student_housing
 {
-    class Student
+    public class Student
     {
         private List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
 
