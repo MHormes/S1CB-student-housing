@@ -16,5 +16,17 @@ namespace PCBS03_3_student_housing
             Title = title;
             Rule = rule;
         }
+
+        public string Title
+        {
+            set { this.title = value; }
+            get { return title; }
+        }
+
+        public string Rule
+        {
+            set { this.rule = value; }
+            get { return rule; }
+        }
     }
 }
