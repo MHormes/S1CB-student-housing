@@ -49,7 +49,7 @@ namespace PCBS03_3_student_housing
             this.tpStudentAnnouncements = new System.Windows.Forms.TabPage();
             this.tbxAuthorNameAnnouncements = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnAddNews = new System.Windows.Forms.Button();
+            this.btnAddAnnouncement = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.tbxMessageAnnouncements = new System.Windows.Forms.TextBox();
             this.lbxStudentAnnouncements = new System.Windows.Forms.ListBox();
@@ -270,7 +270,7 @@ namespace PCBS03_3_student_housing
             // 
             this.tpStudentAnnouncements.Controls.Add(this.tbxAuthorNameAnnouncements);
             this.tpStudentAnnouncements.Controls.Add(this.label3);
-            this.tpStudentAnnouncements.Controls.Add(this.btnAddNews);
+            this.tpStudentAnnouncements.Controls.Add(this.btnAddAnnouncement);
             this.tpStudentAnnouncements.Controls.Add(this.label4);
             this.tpStudentAnnouncements.Controls.Add(this.tbxMessageAnnouncements);
             this.tpStudentAnnouncements.Controls.Add(this.lbxStudentAnnouncements);
@@ -301,15 +301,16 @@ namespace PCBS03_3_student_housing
             this.label3.TabIndex = 10;
             this.label3.Text = "Message written by";
             // 
-            // btnAddNews
+            // btnAddAnnouncement
             // 
-            this.btnAddNews.Location = new System.Drawing.Point(442, 277);
-            this.btnAddNews.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddNews.Name = "btnAddNews";
-            this.btnAddNews.Size = new System.Drawing.Size(309, 28);
-            this.btnAddNews.TabIndex = 9;
-            this.btnAddNews.Text = "Add your announcement";
-            this.btnAddNews.UseVisualStyleBackColor = true;
+            this.btnAddAnnouncement.Location = new System.Drawing.Point(442, 277);
+            this.btnAddAnnouncement.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddAnnouncement.Name = "btnAddAnnouncement";
+            this.btnAddAnnouncement.Size = new System.Drawing.Size(309, 28);
+            this.btnAddAnnouncement.TabIndex = 9;
+            this.btnAddAnnouncement.Text = "Add your announcement";
+            this.btnAddAnnouncement.UseVisualStyleBackColor = true;
+            this.btnAddAnnouncement.Click += new System.EventHandler(this.btnAddNews_Click);
             // 
             // label4
             // 
@@ -389,7 +390,7 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.TabPage tpStudentAnnouncements;
         private System.Windows.Forms.TextBox tbxAuthorNameAnnouncements;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnAddNews;
+        private System.Windows.Forms.Button btnAddAnnouncement;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbxMessageAnnouncements;
         private System.Windows.Forms.ListBox lbxStudentAnnouncements;

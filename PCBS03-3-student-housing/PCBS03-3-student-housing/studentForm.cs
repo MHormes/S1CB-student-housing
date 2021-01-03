@@ -21,6 +21,12 @@ namespace PCBS03_3_student_housing
         public static List<Complaint> complaintStudentList = new List<Complaint>();
         Complaint complaint;
 
+
+        //Define class and List for admin announcements tab
+        Announcement announcement;
+        public static List<Announcement> announcementList = new List<Announcement>();
+
+
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
 
@@ -29,6 +35,7 @@ namespace PCBS03_3_student_housing
             InitializeComponent();
             UpdateNewsList();
             UpdateComplaintList();
+            UpdateAnnouncementList();
             //lblHeader.Text = $"Welcome, {StudentName}";
         }
 
@@ -82,6 +89,17 @@ namespace PCBS03_3_student_housing
                 {
                     lbxStudentComplaint.Items.Add(comp.GetComplaint());
                 }
+            }
+        }
+
+        private void UpdateAnnouncementList()
+        {
+            //listbox cleared and announcements added
+            lbxStudentAnnouncements.Items.Clear();
+
+            foreach (Announcement ann in announcementList)
+            {
+                lbxStudentAnnouncements.Items.Add(ann.GetAnnouncement());
             }
         }
 
@@ -169,6 +187,26 @@ namespace PCBS03_3_student_housing
         private void lblClose_MouseLeave(object sender, EventArgs e)
         {
             lblClose.ForeColor = Color.White;
+        }
+
+        //Add announcement to the news tab
+        private void btnAddNews_Click(object sender, EventArgs e)
+        {
+             //check if input is not empty
+             if (!String.IsNullOrWhiteSpace(tbxMessageAnnouncements.Text) && !String.IsNullOrWhiteSpace(tbxAuthorNameAnnouncements.Text))
+                {
+                //add announcement object
+                announcement = new Announcement(tbxMessageAnnouncements.Text, tbxAuthorNameAnnouncements.Text);
+                //add to the announcement list
+                announcementList.Add(announcement);
+                //update the listbox
+                UpdateAnnouncementList();
+             }
+             //one of 2 fields empty? show message
+             else
+             {
+                MessageBox.Show("Please fill in both fields before pressing the add button");
+             }
         }
     }
 }
