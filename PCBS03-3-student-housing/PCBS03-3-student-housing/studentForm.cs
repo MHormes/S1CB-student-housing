@@ -111,7 +111,6 @@ namespace PCBS03_3_student_housing
                 if (com.GetComplaint() == (string)lbxStudentComplaint.SelectedItem)
                 {
                     complaintStudentList.Remove(com);
-                    MessageBox.Show("You have remove your own complaint");
                     UpdateComplaintList();
                     return;
                 }
