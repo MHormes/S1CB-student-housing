@@ -18,6 +18,9 @@ namespace PCBS03_3_student_housing
         News news;
         public static List<News> newsList = new List<News>();
 
+        //create news list, this is the same list adminForm uses.
+        List<Announcement> announcementStudentList = studentForm.announcementList;
+
         //get studentComplaint list
         List<Complaint> adminComplaints = studentForm.complaintStudentList;
 
@@ -26,11 +29,13 @@ namespace PCBS03_3_student_housing
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
 
+        //update lists
         public adminForm()
         {
             InitializeComponent();
             UpdateNewsList();
             UpdateComplaintList();
+            UpdateAnnouncementList();
         }
 
         //Add news to the news tab
@@ -142,6 +147,19 @@ namespace PCBS03_3_student_housing
             foreach (Complaint com in adminComplaints)
             {
                 lbxAdminComplaint.Items.Add(com.GetComplaint());
+            }
+        }
+
+        //update announcements
+        private void UpdateAnnouncementList()
+        {
+            //listbox cleared
+            lbxAdminAnnouncement.Items.Clear();
+
+            //items added
+            foreach (Announcement ann in announcementStudentList)
+            {
+                lbxAdminAnnouncement.Items.Add(ann.GetAnnouncement());
             }
         }
 

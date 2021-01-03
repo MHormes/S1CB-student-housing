@@ -8,10 +8,10 @@ namespace PCBS03_3_student_housing
 {
     class Rules
     {
-        private string title;
-        private string rule;
+        private String Title;
+        private String Rule;
 
-        public Rules(string title, string rule)
+        public Rules(String title, String rule)
         {
             Title = title;
             Rule = rule;
