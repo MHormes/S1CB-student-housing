@@ -29,7 +29,7 @@ namespace PCBS03_3_student_housing
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.lbxAdminAnnouncements = new System.Windows.Forms.TabControl();
             this.tpAdminNews = new System.Windows.Forms.TabPage();
             this.tbxAuthorName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -60,26 +60,28 @@ namespace PCBS03_3_student_housing
             this.lblClose = new System.Windows.Forms.Label();
             this.pnlDragBar = new System.Windows.Forms.Panel();
             this.tpAdminAnnouncement = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
+            this.lbxAdminAnnouncement = new System.Windows.Forms.ListBox();
+            this.lbxAdminAnnouncements.SuspendLayout();
             this.tpAdminNews.SuspendLayout();
             this.tpAdminAddTenant.SuspendLayout();
             this.tpAdminComplaints.SuspendLayout();
             this.pnlBackground.SuspendLayout();
             this.pnlBar.SuspendLayout();
+            this.tpAdminAnnouncement.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // lbxAdminAnnouncements
             // 
-            this.tabControl1.Controls.Add(this.tpAdminNews);
-            this.tabControl1.Controls.Add(this.tpAdminAddTenant);
-            this.tabControl1.Controls.Add(this.tpAdminComplaints);
-            this.tabControl1.Controls.Add(this.tpAdminAnnouncement);
-            this.tabControl1.Location = new System.Drawing.Point(14, 104);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(771, 351);
-            this.tabControl1.TabIndex = 1;
+            this.lbxAdminAnnouncements.Controls.Add(this.tpAdminNews);
+            this.lbxAdminAnnouncements.Controls.Add(this.tpAdminAddTenant);
+            this.lbxAdminAnnouncements.Controls.Add(this.tpAdminComplaints);
+            this.lbxAdminAnnouncements.Controls.Add(this.tpAdminAnnouncement);
+            this.lbxAdminAnnouncements.Location = new System.Drawing.Point(14, 104);
+            this.lbxAdminAnnouncements.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lbxAdminAnnouncements.Name = "lbxAdminAnnouncements";
+            this.lbxAdminAnnouncements.SelectedIndex = 0;
+            this.lbxAdminAnnouncements.Size = new System.Drawing.Size(771, 351);
+            this.lbxAdminAnnouncements.TabIndex = 1;
             // 
             // tpAdminNews
             // 
@@ -349,7 +351,7 @@ namespace PCBS03_3_student_housing
             this.pnlBackground.Controls.Add(this.lblHeader);
             this.pnlBackground.Controls.Add(this.button_logout);
             this.pnlBackground.Controls.Add(this.textBox_defocus);
-            this.pnlBackground.Controls.Add(this.tabControl1);
+            this.pnlBackground.Controls.Add(this.lbxAdminAnnouncements);
             this.pnlBackground.Controls.Add(this.pnlBar);
             this.pnlBackground.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnlBackground.Location = new System.Drawing.Point(0, 1);
@@ -424,6 +426,7 @@ namespace PCBS03_3_student_housing
             // 
             // tpAdminAnnouncement
             // 
+            this.tpAdminAnnouncement.Controls.Add(this.lbxAdminAnnouncement);
             this.tpAdminAnnouncement.Location = new System.Drawing.Point(4, 25);
             this.tpAdminAnnouncement.Name = "tpAdminAnnouncement";
             this.tpAdminAnnouncement.Padding = new System.Windows.Forms.Padding(3);
@@ -431,6 +434,16 @@ namespace PCBS03_3_student_housing
             this.tpAdminAnnouncement.TabIndex = 3;
             this.tpAdminAnnouncement.Text = "Announcements";
             this.tpAdminAnnouncement.UseVisualStyleBackColor = true;
+            // 
+            // lbxAdminAnnouncement
+            // 
+            this.lbxAdminAnnouncement.FormattingEnabled = true;
+            this.lbxAdminAnnouncement.ItemHeight = 16;
+            this.lbxAdminAnnouncement.Location = new System.Drawing.Point(9, 7);
+            this.lbxAdminAnnouncement.Margin = new System.Windows.Forms.Padding(4);
+            this.lbxAdminAnnouncement.Name = "lbxAdminAnnouncement";
+            this.lbxAdminAnnouncement.Size = new System.Drawing.Size(743, 308);
+            this.lbxAdminAnnouncement.TabIndex = 5;
             // 
             // adminForm
             // 
@@ -444,7 +457,7 @@ namespace PCBS03_3_student_housing
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "adminForm";
             this.Text = "adminForm";
-            this.tabControl1.ResumeLayout(false);
+            this.lbxAdminAnnouncements.ResumeLayout(false);
             this.tpAdminNews.ResumeLayout(false);
             this.tpAdminNews.PerformLayout();
             this.tpAdminAddTenant.ResumeLayout(false);
@@ -454,13 +467,14 @@ namespace PCBS03_3_student_housing
             this.pnlBackground.ResumeLayout(false);
             this.pnlBackground.PerformLayout();
             this.pnlBar.ResumeLayout(false);
+            this.tpAdminAnnouncement.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl lbxAdminAnnouncements;
         private System.Windows.Forms.TabPage tpAdminNews;
         private System.Windows.Forms.TabPage tpAdminAddTenant;
         private System.Windows.Forms.TextBox tbxAuthorName;
@@ -491,5 +505,6 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.Panel pnlDragBar;
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.TabPage tpAdminAnnouncement;
+        private System.Windows.Forms.ListBox lbxAdminAnnouncement;
     }
 }

@@ -47,11 +47,18 @@ namespace PCBS03_3_student_housing
             this.lblClose = new System.Windows.Forms.Label();
             this.pnlDragBar = new System.Windows.Forms.Panel();
             this.tpStudentAnnouncements = new System.Windows.Forms.TabPage();
+            this.tbxAuthorNameAnnouncements = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnAddNews = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tbxMessageAnnouncements = new System.Windows.Forms.TextBox();
+            this.lbxStudentAnnouncements = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tpStudentNews.SuspendLayout();
             this.tpStudentComplaint.SuspendLayout();
             this.pnlBackground.SuspendLayout();
             this.pnlBar.SuspendLayout();
+            this.tpStudentAnnouncements.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -261,6 +268,12 @@ namespace PCBS03_3_student_housing
             // 
             // tpStudentAnnouncements
             // 
+            this.tpStudentAnnouncements.Controls.Add(this.tbxAuthorNameAnnouncements);
+            this.tpStudentAnnouncements.Controls.Add(this.label3);
+            this.tpStudentAnnouncements.Controls.Add(this.btnAddNews);
+            this.tpStudentAnnouncements.Controls.Add(this.label4);
+            this.tpStudentAnnouncements.Controls.Add(this.tbxMessageAnnouncements);
+            this.tpStudentAnnouncements.Controls.Add(this.lbxStudentAnnouncements);
             this.tpStudentAnnouncements.Location = new System.Drawing.Point(4, 25);
             this.tpStudentAnnouncements.Name = "tpStudentAnnouncements";
             this.tpStudentAnnouncements.Padding = new System.Windows.Forms.Padding(3);
@@ -268,6 +281,65 @@ namespace PCBS03_3_student_housing
             this.tpStudentAnnouncements.TabIndex = 3;
             this.tpStudentAnnouncements.Text = "Announcements";
             this.tpStudentAnnouncements.UseVisualStyleBackColor = true;
+            // 
+            // tbxAuthorNameAnnouncements
+            // 
+            this.tbxAuthorNameAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxAuthorNameAnnouncements.Location = new System.Drawing.Point(442, 218);
+            this.tbxAuthorNameAnnouncements.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxAuthorNameAnnouncements.Name = "tbxAuthorNameAnnouncements";
+            this.tbxAuthorNameAnnouncements.Size = new System.Drawing.Size(311, 34);
+            this.tbxAuthorNameAnnouncements.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(445, 197);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(129, 17);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Message written by";
+            // 
+            // btnAddNews
+            // 
+            this.btnAddNews.Location = new System.Drawing.Point(442, 277);
+            this.btnAddNews.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddNews.Name = "btnAddNews";
+            this.btnAddNews.Size = new System.Drawing.Size(309, 28);
+            this.btnAddNews.TabIndex = 9;
+            this.btnAddNews.Text = "Add your announcement";
+            this.btnAddNews.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(441, 6);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(211, 17);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Write your announcement below";
+            // 
+            // tbxMessageAnnouncements
+            // 
+            this.tbxMessageAnnouncements.AcceptsReturn = true;
+            this.tbxMessageAnnouncements.Location = new System.Drawing.Point(441, 26);
+            this.tbxMessageAnnouncements.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxMessageAnnouncements.Multiline = true;
+            this.tbxMessageAnnouncements.Name = "tbxMessageAnnouncements";
+            this.tbxMessageAnnouncements.Size = new System.Drawing.Size(312, 162);
+            this.tbxMessageAnnouncements.TabIndex = 6;
+            // 
+            // lbxStudentAnnouncements
+            // 
+            this.lbxStudentAnnouncements.FormattingEnabled = true;
+            this.lbxStudentAnnouncements.ItemHeight = 16;
+            this.lbxStudentAnnouncements.Location = new System.Drawing.Point(9, 6);
+            this.lbxStudentAnnouncements.Margin = new System.Windows.Forms.Padding(4);
+            this.lbxStudentAnnouncements.Name = "lbxStudentAnnouncements";
+            this.lbxStudentAnnouncements.Size = new System.Drawing.Size(424, 308);
+            this.lbxStudentAnnouncements.TabIndex = 5;
             // 
             // studentForm
             // 
@@ -289,6 +361,8 @@ namespace PCBS03_3_student_housing
             this.tpStudentComplaint.PerformLayout();
             this.pnlBackground.ResumeLayout(false);
             this.pnlBar.ResumeLayout(false);
+            this.tpStudentAnnouncements.ResumeLayout(false);
+            this.tpStudentAnnouncements.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -313,5 +387,11 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.TabPage tpStudentRules;
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.TabPage tpStudentAnnouncements;
+        private System.Windows.Forms.TextBox tbxAuthorNameAnnouncements;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnAddNews;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbxMessageAnnouncements;
+        private System.Windows.Forms.ListBox lbxStudentAnnouncements;
     }
 }
