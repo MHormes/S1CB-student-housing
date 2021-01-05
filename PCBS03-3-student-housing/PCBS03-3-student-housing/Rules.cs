@@ -11,7 +11,7 @@ namespace PCBS03_3_student_housing
         private string title;
         private string rule;
 
-        public Rules(String title, String rule)
+        public Rules(string title, string rule)
         {
             Title = title;
             Rule = rule;
