@@ -16,7 +16,7 @@ namespace PCBS03_3_student_housing
         //string to pass the username to an other form for later use
         public static string studentName;
 
-        Student student = new Student();
+        //Student student = new Student();
 
         //account names and passwords
         private string adminNamePass = "admin";
@@ -63,9 +63,9 @@ namespace PCBS03_3_student_housing
             {
                 List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
                 //new list
-                studentList = student.getStudentList();
+                studentList = Student.getStudentList();
 
-                bool found = student.itContainsStudent(textBox_accountName.Text);
+                bool found = Student.itContainsStudent(textBox_accountName.Text);
                 int index = -1;
 
                 if (!found)

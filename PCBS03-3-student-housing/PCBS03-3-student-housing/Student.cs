@@ -8,16 +8,16 @@ namespace PCBS03_3_student_housing
 {
     public class Student
     {
-        private List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
+        static private List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
 
         //add student method (name, password)
-        public void addStudent(string studentName, string studentPassword)
+        static public void addStudent(string studentName, string studentPassword)
         {
             studentList.Add(Tuple.Create(studentName, studentPassword));
         }
 
         //only name needed, remove student method
-        public void removeStudent(string studentName)
+        static public void removeStudent(string studentName)
         {
             //index of the element finded
             int index = 0;
@@ -30,7 +30,7 @@ namespace PCBS03_3_student_housing
             studentList.RemoveAt(index);
         }
 
-        public bool itContainsStudent(string studentName)
+        static public bool itContainsStudent(string studentName)
         {
             //bool to check if the student is present in the list
             bool itContains = false;
@@ -43,7 +43,7 @@ namespace PCBS03_3_student_housing
         }
 
         //student list returned
-        public List<Tuple<string, string>> getStudentList()
+        static public List<Tuple<string, string>> getStudentList()
         {
             return studentList;
         }

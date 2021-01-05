@@ -24,8 +24,7 @@ namespace PCBS03_3_student_housing
         //get studentComplaint list
         List<Complaint> adminComplaints = studentForm.complaintStudentList;
 
-        Student student = new Student();
-        List<Tuple<string, string>> studentList = new List<Tuple<string, string>>();
+        List<Tuple<string, string>> studentList = Student.getStudentList();
 
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
@@ -91,7 +90,7 @@ namespace PCBS03_3_student_housing
                 MessageBox.Show("Account name and password required. Please retry.");
                 return;
             }
-            student.addStudent(textBox_tenantName.Text, textBox_tenantPassword.Text);
+            Student.addStudent(textBox_tenantName.Text, textBox_tenantPassword.Text);
             //textbox cleared
             textBox_tenantName.Clear();
             textBox_tenantPassword.Clear();
@@ -110,10 +109,10 @@ namespace PCBS03_3_student_housing
             }
 
             //student present in the list?
-            if (student.itContainsStudent(textBox_tenantName.Text))
+            if (Student.itContainsStudent(textBox_tenantName.Text))
             {
                 //yes -> remove
-                student.removeStudent(textBox_tenantName.Text);
+                Student.removeStudent(textBox_tenantName.Text);
                 //textbox cleared
                 textBox_tenantName.Clear();
                 //list updated
@@ -131,8 +130,6 @@ namespace PCBS03_3_student_housing
         {
             //listbox cleared
             listBox_tenants.Items.Clear();
-            //new list
-            studentList = student.getStudentList();
 
             //take all items and add them 1 by 1 in the Listbox.
             foreach (Tuple<string, string> student in studentList)
