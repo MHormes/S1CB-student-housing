@@ -42,9 +42,9 @@ namespace PCBS03_3_student_housing
         //Add news to the news tab
         private void btnAddNews_Click(object sender, EventArgs e)
         {
-            
+
             //check if input is not empty
-            if(!String.IsNullOrWhiteSpace(tbxMessage.Text) && !String.IsNullOrWhiteSpace(tbxAuthorName.Text))
+            if (!String.IsNullOrWhiteSpace(tbxMessage.Text) && !String.IsNullOrWhiteSpace(tbxAuthorName.Text))
             {
                 //add news object
                 news = new News(tbxMessage.Text, tbxAuthorName.Text);
@@ -57,7 +57,7 @@ namespace PCBS03_3_student_housing
             else
             {
                 MessageBox.Show("Please fill in both fields before pressing the add button");
-            }   
+            }
         }
 
         // Method for updating the news listbox. 
@@ -67,7 +67,7 @@ namespace PCBS03_3_student_housing
             lbxAdminNews.Items.Clear();
 
             //take all items and add them 1 by 1 in the Listbox.
-            foreach(News news in newsList)
+            foreach (News news in newsList)
             {
                 lbxAdminNews.Items.Add(news.GetNews());
             }
@@ -102,9 +102,25 @@ namespace PCBS03_3_student_housing
         private void button_removeTenant_Click(object sender, EventArgs e)
         {
             //name required
-            if (String.IsNullOrEmpty(textBox_tenantName.Text))
+            if (String.IsNullOrEmpty(textBox_tenantName.Text) && listBox_tenants.SelectedIndex == -1)
             {
-                MessageBox.Show("Account name required. Please retry.");
+                MessageBox.Show("Account name or item required. Please retry.");
+                return;
+            }
+
+            if (!String.IsNullOrEmpty(textBox_tenantName.Text) && listBox_tenants.SelectedIndex != -1)
+            {
+                MessageBox.Show("You inserted both the item on the list and a name. Please remove one of them.");
+                return;
+            }
+
+            if (listBox_tenants.SelectedIndex != -1)
+            {
+                Student.removeStudent(studentList.ElementAt(listBox_tenants.SelectedIndex).Item1);
+                //textbox cleared
+                textBox_tenantName.Clear();
+                //list updated
+                UpdateStudentList();
                 return;
             }
 
@@ -117,6 +133,7 @@ namespace PCBS03_3_student_housing
                 textBox_tenantName.Clear();
                 //list updated
                 UpdateStudentList();
+                return;
             }
             //no -> error
             else
@@ -254,6 +271,11 @@ namespace PCBS03_3_student_housing
         private void lblClose_MouseLeave(object sender, EventArgs e)
         {
             lblClose.ForeColor = Color.White;
+        }
+
+        private void button_unselect_Click_1(object sender, EventArgs e)
+        {
+            listBox_tenants.SelectedIndex = -1;
         }
     }
 }
