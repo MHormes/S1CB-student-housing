@@ -13,8 +13,8 @@ namespace PCBS03_3_student_housing
 
         public News(string news, string name)
         {
-                message = news;
-                author = name;
+            message = news;
+            author = name;
         }
 
         public string GetNews()

@@ -69,7 +69,7 @@
     <Compile Include="QuitDialog.Designer.cs">
       <DependentUpon>QuitDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Rules.cs" />
+    <Compile Include="Rule.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="studentForm.cs">
       <SubType>Form</SubType>

@@ -26,6 +26,19 @@ namespace PCBS03_3_student_housing
 
         List<Tuple<string, string>> studentList = Student.getStudentList();
 
+
+        /*
+         
+        ---------------------------------------
+        |   Hi, I'm getting errors for this... I think I'm doing it wrong. 
+        |   Please could you assist?      
+        |     - LP                       
+        ---------------------------------
+        //Define class and List for admin rules tab
+        Rule rule;
+        public static List<Rule> ruleList = new List<Rule>();
+                                                                            */
+
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
 
@@ -276,6 +289,29 @@ namespace PCBS03_3_student_housing
         private void button_unselect_Click_1(object sender, EventArgs e)
         {
             listBox_tenants.SelectedIndex = -1;
+        }
+
+        private void btnAddRule_Click(object sender, EventArgs e)
+        { 
+            /*
+
+            //check if input is not empty
+            if (!String.IsNullOrWhiteSpace(tbxRule.Text))
+            {
+                //add list object
+                rule = new Rule(tbxRule.Text);
+                //add to the rule list
+                ruleList.Add(rule);
+                //update the listbox
+                UpdateAnnouncementList();
+            }
+            //field empty? show message
+            else
+            {
+                MessageBox.Show("Please fill in the field before pressing the add button");
+            } 
+
+            */
         }
     }
 }
