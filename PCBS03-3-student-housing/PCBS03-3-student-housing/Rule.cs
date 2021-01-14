@@ -6,23 +6,33 @@ using System.Threading.Tasks;
 
 namespace PCBS03_3_student_housing
 {
-    class Rule
+    public class Rule
     {
         public static int CountSeeder = 1;
         private int ruleCounter;
-        private string rule;
+        private string ruleText;
 
+        public int RuleCounter
+        {
+            get { return this.ruleCounter; }
+            set { this.ruleCounter = value; }
+        }
+
+        public string RuleText
+        {
+            set { this.ruleText = value; }
+        }
         public Rule(string rule)
         {
-            this.rule = rule;
-            ruleCounter = CountSeeder;
+            RuleText = rule;
+            RuleCounter = CountSeeder;
             CountSeeder++;
         }
 
   
         public string GetRule()
         {
-            return $"{ruleCounter}: {rule}";
+            return $"{ruleCounter}: {ruleText}";
             
         }
     }

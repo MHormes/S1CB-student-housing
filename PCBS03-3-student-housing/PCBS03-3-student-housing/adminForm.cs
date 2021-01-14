@@ -18,7 +18,7 @@ namespace PCBS03_3_student_housing
         News news;
         public static List<News> newsList = new List<News>();
 
-        //create news list, this is the same list adminForm uses.
+        //create news list, this is the same list StudentForm uses.
         List<Announcement> announcementStudentList = studentForm.announcementList;
 
         //get studentComplaint list
@@ -27,17 +27,10 @@ namespace PCBS03_3_student_housing
         List<Tuple<string, string>> studentList = Student.getStudentList();
 
 
-        /*
-         
-        ---------------------------------------
-        |   Hi, I'm getting errors for this... I think I'm doing it wrong. 
-        |   Please could you assist?      
-        |     - LP                       
-        ---------------------------------
-        //Define class and List for admin rules tab
+        //create instance of class and List for admin rules tab
         Rule rule;
         public static List<Rule> ruleList = new List<Rule>();
-                                                                            */
+
 
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
@@ -191,6 +184,16 @@ namespace PCBS03_3_student_housing
             }
         }
 
+        private void UpdateRuleList()
+        {
+            lbxAdminRules.Items.Clear();
+
+            foreach(Rule r in ruleList)
+            {
+                lbxAdminRules.Items.Add(r.GetRule());
+            }
+        }
+
         private void btnRefreshComplaints_Click(object sender, EventArgs e)
         {
             UpdateComplaintList();
@@ -292,9 +295,7 @@ namespace PCBS03_3_student_housing
         }
 
         private void btnAddRule_Click(object sender, EventArgs e)
-        { 
-            /*
-
+        {
             //check if input is not empty
             if (!String.IsNullOrWhiteSpace(tbxRule.Text))
             {
@@ -303,15 +304,44 @@ namespace PCBS03_3_student_housing
                 //add to the rule list
                 ruleList.Add(rule);
                 //update the listbox
-                UpdateAnnouncementList();
+                UpdateRuleList();
             }
             //field empty? show message
             else
             {
                 MessageBox.Show("Please fill in the field before pressing the add button");
-            } 
+            }
+        }
 
-            */
+        private void btnRemoveRule_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = lbxAdminRules.SelectedIndex;
+            if(selectedIndex != -1)
+            {
+                ruleList.RemoveAt(selectedIndex);
+                foreach(Rule r in ruleList)
+                {
+                    if(r.RuleCounter > selectedIndex)
+                    {
+                        r.RuleCounter--;
+                    }
+                }
+                UpdateRuleList();
+                Rule.CountSeeder--;
+                return;
+            }
+            MessageBox.Show("Please select a rule to remove");
+        }
+
+        private void btnEditRule_Click(object sender, EventArgs e)
+        {
+            if(lbxAdminRules.SelectedIndex != -1 && !String.IsNullOrEmpty(tbxRule.Text))
+            {
+                ruleList[lbxAdminRules.SelectedIndex].RuleText = tbxRule.Text;
+                UpdateRuleList();
+                return;
+            }
+            MessageBox.Show("Please select a rule and fill in the field before clicking the button");
         }
     }
 }
