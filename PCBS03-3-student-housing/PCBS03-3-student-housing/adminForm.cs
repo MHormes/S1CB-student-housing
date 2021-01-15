@@ -43,6 +43,7 @@ namespace PCBS03_3_student_housing
             UpdateComplaintList();
             UpdateAnnouncementList();
             UpdateStudentList();
+            UpdateRuleList();
         }
 
         //Add news to the news tab
@@ -182,7 +183,7 @@ namespace PCBS03_3_student_housing
             {
                 lbxAdminAnnouncement.Items.Add(ann.GetAnnouncement());
             }
-        }
+        }   
 
         private void UpdateRuleList()
         {

@@ -33,7 +33,6 @@ namespace PCBS03_3_student_housing
         public string GetRule()
         {
             return $"{ruleCounter}: {ruleText}";
-            
         }
     }
 }

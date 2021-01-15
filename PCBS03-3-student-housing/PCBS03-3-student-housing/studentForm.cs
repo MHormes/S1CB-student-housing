@@ -26,6 +26,9 @@ namespace PCBS03_3_student_housing
         Announcement announcement;
         public static List<Announcement> announcementList = new List<Announcement>();
 
+        //create instance of class and List for admin rules tab
+        Rule rule;
+        public static List<Rule> ruleList = new List<Rule>();
 
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
@@ -36,6 +39,7 @@ namespace PCBS03_3_student_housing
             UpdateNewsList();
             UpdateComplaintList();
             UpdateAnnouncementList();
+            UpdateRulesList();
             //lblHeader.Text = $"Welcome, {StudentName}";
         }
 
@@ -100,6 +104,17 @@ namespace PCBS03_3_student_housing
             foreach (Announcement ann in announcementList)
             {
                 lbxStudentAnnouncements.Items.Add(ann.GetAnnouncement());
+            }
+        }
+
+        private void UpdateRulesList()
+        {
+            //listbox cleared and rules added
+            lbxStudentRules.Items.Clear();
+
+            foreach (Rule r in ruleList)
+            {
+                lbxStudentRules.Items.Add(r.GetRule());
             }
         }
 
