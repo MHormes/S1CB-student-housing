@@ -27,8 +27,7 @@ namespace PCBS03_3_student_housing
         public static List<Announcement> announcementList = new List<Announcement>();
 
         //create instance of class and List for admin rules tab
-        Rule rule;
-        public static List<Rule> ruleList = new List<Rule>();
+        public static List<Rule> ruleList = adminForm.ruleList;
 
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;

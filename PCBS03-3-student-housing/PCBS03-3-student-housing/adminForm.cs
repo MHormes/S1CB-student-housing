@@ -26,7 +26,6 @@ namespace PCBS03_3_student_housing
 
         List<Tuple<string, string>> studentList = Student.getStudentList();
 
-
         //create instance of class and List for admin rules tab
         Rule rule;
         public static List<Rule> ruleList = new List<Rule>();
@@ -306,6 +305,7 @@ namespace PCBS03_3_student_housing
                 ruleList.Add(rule);
                 //update the listbox
                 UpdateRuleList();
+                tbxRule.Clear();
             }
             //field empty? show message
             else
