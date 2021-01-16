@@ -40,6 +40,7 @@ namespace PCBS03_3_student_housing
             this.tbxStudentComplaint = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tpStudentRules = new System.Windows.Forms.TabPage();
+            this.lbxStudentRules = new System.Windows.Forms.ListBox();
             this.tpStudentAnnouncements = new System.Windows.Forms.TabPage();
             this.tbxAuthorNameAnnouncements = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,7 +54,35 @@ namespace PCBS03_3_student_housing
             this.pnlBar = new System.Windows.Forms.Panel();
             this.lblClose = new System.Windows.Forms.Label();
             this.pnlDragBar = new System.Windows.Forms.Panel();
-            this.lbxStudentRules = new System.Windows.Forms.ListBox();
+            this.tpSchedule = new System.Windows.Forms.TabPage();
+            this.lblRecycle2 = new System.Windows.Forms.Label();
+            this.lblRecycle3 = new System.Windows.Forms.Label();
+            this.lblRecycle1 = new System.Windows.Forms.Label();
+            this.gbSchedule = new System.Windows.Forms.GroupBox();
+            this.lblBlank1 = new System.Windows.Forms.Label();
+            this.lblBlank2 = new System.Windows.Forms.Label();
+            this.lblGarbage2 = new System.Windows.Forms.Label();
+            this.lblCardboard2 = new System.Windows.Forms.Label();
+            this.lblClean2 = new System.Windows.Forms.Label();
+            this.lblCardboard1 = new System.Windows.Forms.Label();
+            this.lblClean1 = new System.Windows.Forms.Label();
+            this.lblGarbage1 = new System.Windows.Forms.Label();
+            this.lblCardboard3 = new System.Windows.Forms.Label();
+            this.lblClean3 = new System.Windows.Forms.Label();
+            this.lblGarbage3 = new System.Windows.Forms.Label();
+            this.lblBlank4 = new System.Windows.Forms.Label();
+            this.lblBlank3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblSunday = new System.Windows.Forms.Label();
+            this.lblSaturday = new System.Windows.Forms.Label();
+            this.lblFriday = new System.Windows.Forms.Label();
+            this.lblThursday = new System.Windows.Forms.Label();
+            this.lblWednesday = new System.Windows.Forms.Label();
+            this.lblTuesday = new System.Windows.Forms.Label();
+            this.lblMonday = new System.Windows.Forms.Label();
+            this.lblGarbage4 = new System.Windows.Forms.Label();
+            this.lblCardboard4 = new System.Windows.Forms.Label();
+            this.lblClean4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tpStudentNews.SuspendLayout();
             this.tpStudentComplaint.SuspendLayout();
@@ -61,6 +90,9 @@ namespace PCBS03_3_student_housing
             this.tpStudentAnnouncements.SuspendLayout();
             this.pnlBackground.SuspendLayout();
             this.pnlBar.SuspendLayout();
+            this.tpSchedule.SuspendLayout();
+            this.gbSchedule.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -69,6 +101,7 @@ namespace PCBS03_3_student_housing
             this.tabControl1.Controls.Add(this.tpStudentComplaint);
             this.tabControl1.Controls.Add(this.tpStudentRules);
             this.tabControl1.Controls.Add(this.tpStudentAnnouncements);
+            this.tabControl1.Controls.Add(this.tpSchedule);
             this.tabControl1.Location = new System.Drawing.Point(21, 230);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tabControl1.Name = "tabControl1";
@@ -93,7 +126,7 @@ namespace PCBS03_3_student_housing
             this.lbxStudentNews.FormattingEnabled = true;
             this.lbxStudentNews.ItemHeight = 29;
             this.lbxStudentNews.Location = new System.Drawing.Point(14, 9);
-            this.lbxStudentNews.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.lbxStudentNews.Margin = new System.Windows.Forms.Padding(7);
             this.lbxStudentNews.Name = "lbxStudentNews";
             this.lbxStudentNews.Size = new System.Drawing.Size(1299, 555);
             this.lbxStudentNews.TabIndex = 0;
@@ -120,7 +153,7 @@ namespace PCBS03_3_student_housing
             // btnStudentRemoveComplaint
             // 
             this.btnStudentRemoveComplaint.Location = new System.Drawing.Point(506, 167);
-            this.btnStudentRemoveComplaint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStudentRemoveComplaint.Margin = new System.Windows.Forms.Padding(4);
             this.btnStudentRemoveComplaint.Name = "btnStudentRemoveComplaint";
             this.btnStudentRemoveComplaint.Size = new System.Drawing.Size(481, 54);
             this.btnStudentRemoveComplaint.TabIndex = 5;
@@ -184,13 +217,24 @@ namespace PCBS03_3_student_housing
             // 
             this.tpStudentRules.Controls.Add(this.lbxStudentRules);
             this.tpStudentRules.Location = new System.Drawing.Point(10, 47);
-            this.tpStudentRules.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpStudentRules.Margin = new System.Windows.Forms.Padding(4);
             this.tpStudentRules.Name = "tpStudentRules";
-            this.tpStudentRules.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tpStudentRules.Padding = new System.Windows.Forms.Padding(4);
             this.tpStudentRules.Size = new System.Drawing.Size(1329, 577);
             this.tpStudentRules.TabIndex = 2;
             this.tpStudentRules.Text = "Rules";
             this.tpStudentRules.UseVisualStyleBackColor = true;
+            // 
+            // lbxStudentRules
+            // 
+            this.lbxStudentRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxStudentRules.FormattingEnabled = true;
+            this.lbxStudentRules.ItemHeight = 55;
+            this.lbxStudentRules.Location = new System.Drawing.Point(15, 11);
+            this.lbxStudentRules.Margin = new System.Windows.Forms.Padding(7);
+            this.lbxStudentRules.Name = "lbxStudentRules";
+            this.lbxStudentRules.Size = new System.Drawing.Size(1299, 554);
+            this.lbxStudentRules.TabIndex = 1;
             // 
             // tpStudentAnnouncements
             // 
@@ -201,9 +245,9 @@ namespace PCBS03_3_student_housing
             this.tpStudentAnnouncements.Controls.Add(this.tbxMessageAnnouncements);
             this.tpStudentAnnouncements.Controls.Add(this.lbxStudentAnnouncements);
             this.tpStudentAnnouncements.Location = new System.Drawing.Point(10, 47);
-            this.tpStudentAnnouncements.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tpStudentAnnouncements.Margin = new System.Windows.Forms.Padding(5);
             this.tpStudentAnnouncements.Name = "tpStudentAnnouncements";
-            this.tpStudentAnnouncements.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tpStudentAnnouncements.Padding = new System.Windows.Forms.Padding(5);
             this.tpStudentAnnouncements.Size = new System.Drawing.Size(1329, 577);
             this.tpStudentAnnouncements.TabIndex = 3;
             this.tpStudentAnnouncements.Text = "Announcements";
@@ -213,7 +257,7 @@ namespace PCBS03_3_student_housing
             // 
             this.tbxAuthorNameAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxAuthorNameAnnouncements.Location = new System.Drawing.Point(774, 395);
-            this.tbxAuthorNameAnnouncements.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tbxAuthorNameAnnouncements.Margin = new System.Windows.Forms.Padding(7);
             this.tbxAuthorNameAnnouncements.Name = "tbxAuthorNameAnnouncements";
             this.tbxAuthorNameAnnouncements.Size = new System.Drawing.Size(541, 55);
             this.tbxAuthorNameAnnouncements.TabIndex = 7;
@@ -231,7 +275,7 @@ namespace PCBS03_3_student_housing
             // btnAddAnnouncement
             // 
             this.btnAddAnnouncement.Location = new System.Drawing.Point(774, 502);
-            this.btnAddAnnouncement.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnAddAnnouncement.Margin = new System.Windows.Forms.Padding(7);
             this.btnAddAnnouncement.Name = "btnAddAnnouncement";
             this.btnAddAnnouncement.Size = new System.Drawing.Size(541, 51);
             this.btnAddAnnouncement.TabIndex = 9;
@@ -253,7 +297,7 @@ namespace PCBS03_3_student_housing
             // 
             this.tbxMessageAnnouncements.AcceptsReturn = true;
             this.tbxMessageAnnouncements.Location = new System.Drawing.Point(772, 47);
-            this.tbxMessageAnnouncements.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tbxMessageAnnouncements.Margin = new System.Windows.Forms.Padding(7);
             this.tbxMessageAnnouncements.Multiline = true;
             this.tbxMessageAnnouncements.Name = "tbxMessageAnnouncements";
             this.tbxMessageAnnouncements.Size = new System.Drawing.Size(543, 290);
@@ -264,7 +308,7 @@ namespace PCBS03_3_student_housing
             this.lbxStudentAnnouncements.FormattingEnabled = true;
             this.lbxStudentAnnouncements.ItemHeight = 29;
             this.lbxStudentAnnouncements.Location = new System.Drawing.Point(16, 11);
-            this.lbxStudentAnnouncements.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.lbxStudentAnnouncements.Margin = new System.Windows.Forms.Padding(7);
             this.lbxStudentAnnouncements.Name = "lbxStudentAnnouncements";
             this.lbxStudentAnnouncements.Size = new System.Drawing.Size(739, 555);
             this.lbxStudentAnnouncements.TabIndex = 5;
@@ -349,15 +393,346 @@ namespace PCBS03_3_student_housing
             this.pnlDragBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseDown);
             this.pnlDragBar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlDragBar_MouseMove);
             // 
-            // lbxStudentRules
+            // tpSchedule
             // 
-            this.lbxStudentRules.FormattingEnabled = true;
-            this.lbxStudentRules.ItemHeight = 29;
-            this.lbxStudentRules.Location = new System.Drawing.Point(15, 11);
-            this.lbxStudentRules.Margin = new System.Windows.Forms.Padding(7);
-            this.lbxStudentRules.Name = "lbxStudentRules";
-            this.lbxStudentRules.Size = new System.Drawing.Size(1299, 555);
-            this.lbxStudentRules.TabIndex = 1;
+            this.tpSchedule.Controls.Add(this.groupBox1);
+            this.tpSchedule.Controls.Add(this.gbSchedule);
+            this.tpSchedule.Controls.Add(this.lblRecycle1);
+            this.tpSchedule.Controls.Add(this.lblRecycle3);
+            this.tpSchedule.Controls.Add(this.lblRecycle2);
+            this.tpSchedule.Location = new System.Drawing.Point(10, 47);
+            this.tpSchedule.Name = "tpSchedule";
+            this.tpSchedule.Padding = new System.Windows.Forms.Padding(3);
+            this.tpSchedule.Size = new System.Drawing.Size(1329, 577);
+            this.tpSchedule.TabIndex = 4;
+            this.tpSchedule.Text = "Schedule";
+            this.tpSchedule.UseVisualStyleBackColor = true;
+            // 
+            // lblRecycle2
+            // 
+            this.lblRecycle2.AutoSize = true;
+            this.lblRecycle2.Font = new System.Drawing.Font("Arial Black", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecycle2.Location = new System.Drawing.Point(270, 429);
+            this.lblRecycle2.Name = "lblRecycle2";
+            this.lblRecycle2.Size = new System.Drawing.Size(102, 93);
+            this.lblRecycle2.TabIndex = 0;
+            this.lblRecycle2.Text = "♲";
+            // 
+            // lblRecycle3
+            // 
+            this.lblRecycle3.AutoSize = true;
+            this.lblRecycle3.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold);
+            this.lblRecycle3.ForeColor = System.Drawing.Color.Black;
+            this.lblRecycle3.Location = new System.Drawing.Point(364, 476);
+            this.lblRecycle3.Name = "lblRecycle3";
+            this.lblRecycle3.Size = new System.Drawing.Size(613, 33);
+            this.lblRecycle3.TabIndex = 0;
+            this.lblRecycle3.Text = "Please do try to recycle as much as possible.";
+            // 
+            // lblRecycle1
+            // 
+            this.lblRecycle1.AutoSize = true;
+            this.lblRecycle1.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold);
+            this.lblRecycle1.ForeColor = System.Drawing.Color.Black;
+            this.lblRecycle1.Location = new System.Drawing.Point(364, 445);
+            this.lblRecycle1.Name = "lblRecycle1";
+            this.lblRecycle1.Size = new System.Drawing.Size(109, 38);
+            this.lblRecycle1.TabIndex = 1;
+            this.lblRecycle1.Text = "NOTE:";
+            // 
+            // gbSchedule
+            // 
+            this.gbSchedule.Controls.Add(this.lblClean4);
+            this.gbSchedule.Controls.Add(this.lblCardboard4);
+            this.gbSchedule.Controls.Add(this.lblBlank4);
+            this.gbSchedule.Controls.Add(this.lblBlank3);
+            this.gbSchedule.Controls.Add(this.lblBlank1);
+            this.gbSchedule.Controls.Add(this.lblBlank2);
+            this.gbSchedule.Controls.Add(this.lblGarbage2);
+            this.gbSchedule.Controls.Add(this.lblCardboard2);
+            this.gbSchedule.Controls.Add(this.lblClean2);
+            this.gbSchedule.Controls.Add(this.lblCardboard1);
+            this.gbSchedule.Controls.Add(this.lblClean1);
+            this.gbSchedule.Controls.Add(this.lblGarbage1);
+            this.gbSchedule.Controls.Add(this.lblCardboard3);
+            this.gbSchedule.Controls.Add(this.lblClean3);
+            this.gbSchedule.Controls.Add(this.lblGarbage4);
+            this.gbSchedule.Controls.Add(this.lblGarbage3);
+            this.gbSchedule.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbSchedule.ForeColor = System.Drawing.Color.LightGray;
+            this.gbSchedule.Location = new System.Drawing.Point(36, 47);
+            this.gbSchedule.Name = "gbSchedule";
+            this.gbSchedule.Size = new System.Drawing.Size(1263, 332);
+            this.gbSchedule.TabIndex = 2;
+            this.gbSchedule.TabStop = false;
+            // 
+            // lblBlank1
+            // 
+            this.lblBlank1.AutoSize = true;
+            this.lblBlank1.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold);
+            this.lblBlank1.ForeColor = System.Drawing.Color.Black;
+            this.lblBlank1.Location = new System.Drawing.Point(223, 118);
+            this.lblBlank1.Name = "lblBlank1";
+            this.lblBlank1.Size = new System.Drawing.Size(97, 85);
+            this.lblBlank1.TabIndex = 19;
+            this.lblBlank1.Text = "...";
+            // 
+            // lblBlank2
+            // 
+            this.lblBlank2.AutoSize = true;
+            this.lblBlank2.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold);
+            this.lblBlank2.ForeColor = System.Drawing.Color.Black;
+            this.lblBlank2.Location = new System.Drawing.Point(777, 132);
+            this.lblBlank2.Name = "lblBlank2";
+            this.lblBlank2.Size = new System.Drawing.Size(97, 85);
+            this.lblBlank2.TabIndex = 18;
+            this.lblBlank2.Text = "...";
+            // 
+            // lblGarbage2
+            // 
+            this.lblGarbage2.AutoSize = true;
+            this.lblGarbage2.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold);
+            this.lblGarbage2.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblGarbage2.Location = new System.Drawing.Point(44, 217);
+            this.lblGarbage2.Name = "lblGarbage2";
+            this.lblGarbage2.Size = new System.Drawing.Size(126, 33);
+            this.lblGarbage2.TabIndex = 16;
+            this.lblGarbage2.Text = "Garbage";
+            // 
+            // lblCardboard2
+            // 
+            this.lblCardboard2.AutoSize = true;
+            this.lblCardboard2.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold);
+            this.lblCardboard2.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblCardboard2.Location = new System.Drawing.Point(376, 217);
+            this.lblCardboard2.Name = "lblCardboard2";
+            this.lblCardboard2.Size = new System.Drawing.Size(154, 33);
+            this.lblCardboard2.TabIndex = 13;
+            this.lblCardboard2.Text = "Cardboard";
+            // 
+            // lblClean2
+            // 
+            this.lblClean2.AutoSize = true;
+            this.lblClean2.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold);
+            this.lblClean2.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblClean2.Location = new System.Drawing.Point(567, 217);
+            this.lblClean2.Name = "lblClean2";
+            this.lblClean2.Size = new System.Drawing.Size(130, 33);
+            this.lblClean2.TabIndex = 12;
+            this.lblClean2.Text = "Cleaning";
+            // 
+            // lblCardboard1
+            // 
+            this.lblCardboard1.AutoSize = true;
+            this.lblCardboard1.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold);
+            this.lblCardboard1.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblCardboard1.Location = new System.Drawing.Point(387, 118);
+            this.lblCardboard1.Name = "lblCardboard1";
+            this.lblCardboard1.Size = new System.Drawing.Size(120, 85);
+            this.lblCardboard1.TabIndex = 2;
+            this.lblCardboard1.Text = "📦";
+            // 
+            // lblClean1
+            // 
+            this.lblClean1.AutoSize = true;
+            this.lblClean1.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold);
+            this.lblClean1.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblClean1.Location = new System.Drawing.Point(581, 118);
+            this.lblClean1.Name = "lblClean1";
+            this.lblClean1.Size = new System.Drawing.Size(120, 85);
+            this.lblClean1.TabIndex = 10;
+            this.lblClean1.Text = "🧹";
+            // 
+            // lblGarbage1
+            // 
+            this.lblGarbage1.AutoSize = true;
+            this.lblGarbage1.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold);
+            this.lblGarbage1.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblGarbage1.Location = new System.Drawing.Point(50, 118);
+            this.lblGarbage1.Name = "lblGarbage1";
+            this.lblGarbage1.Size = new System.Drawing.Size(120, 85);
+            this.lblGarbage1.TabIndex = 9;
+            this.lblGarbage1.Text = "🚛";
+            // 
+            // lblCardboard3
+            // 
+            this.lblCardboard3.AutoSize = true;
+            this.lblCardboard3.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold);
+            this.lblCardboard3.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblCardboard3.Location = new System.Drawing.Point(381, 242);
+            this.lblCardboard3.Name = "lblCardboard3";
+            this.lblCardboard3.Size = new System.Drawing.Size(149, 33);
+            this.lblCardboard3.TabIndex = 5;
+            this.lblCardboard3.Text = "Collection";
+            // 
+            // lblClean3
+            // 
+            this.lblClean3.AutoSize = true;
+            this.lblClean3.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold);
+            this.lblClean3.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblClean3.Location = new System.Drawing.Point(573, 242);
+            this.lblClean3.Name = "lblClean3";
+            this.lblClean3.Size = new System.Drawing.Size(115, 33);
+            this.lblClean3.TabIndex = 3;
+            this.lblClean3.Text = "Service";
+            // 
+            // lblGarbage3
+            // 
+            this.lblGarbage3.AutoSize = true;
+            this.lblGarbage3.Font = new System.Drawing.Font("Arial Black", 8F, System.Drawing.FontStyle.Bold);
+            this.lblGarbage3.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblGarbage3.Location = new System.Drawing.Point(38, 242);
+            this.lblGarbage3.Name = "lblGarbage3";
+            this.lblGarbage3.Size = new System.Drawing.Size(149, 33);
+            this.lblGarbage3.TabIndex = 11;
+            this.lblGarbage3.Text = "Collection";
+            // 
+            // lblBlank4
+            // 
+            this.lblBlank4.AutoSize = true;
+            this.lblBlank4.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold);
+            this.lblBlank4.ForeColor = System.Drawing.Color.Gray;
+            this.lblBlank4.Location = new System.Drawing.Point(1130, 132);
+            this.lblBlank4.Name = "lblBlank4";
+            this.lblBlank4.Size = new System.Drawing.Size(97, 85);
+            this.lblBlank4.TabIndex = 29;
+            this.lblBlank4.Text = "...";
+            // 
+            // lblBlank3
+            // 
+            this.lblBlank3.AutoSize = true;
+            this.lblBlank3.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold);
+            this.lblBlank3.ForeColor = System.Drawing.Color.Gray;
+            this.lblBlank3.Location = new System.Drawing.Point(960, 132);
+            this.lblBlank3.Name = "lblBlank3";
+            this.lblBlank3.Size = new System.Drawing.Size(97, 85);
+            this.lblBlank3.TabIndex = 28;
+            this.lblBlank3.Text = "...";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblSunday);
+            this.groupBox1.Controls.Add(this.lblSaturday);
+            this.groupBox1.Controls.Add(this.lblFriday);
+            this.groupBox1.Controls.Add(this.lblThursday);
+            this.groupBox1.Controls.Add(this.lblWednesday);
+            this.groupBox1.Controls.Add(this.lblTuesday);
+            this.groupBox1.Controls.Add(this.lblMonday);
+            this.groupBox1.Location = new System.Drawing.Point(36, 47);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1263, 102);
+            this.groupBox1.TabIndex = 30;
+            this.groupBox1.TabStop = false;
+            // 
+            // lblSunday
+            // 
+            this.lblSunday.AutoSize = true;
+            this.lblSunday.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.lblSunday.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblSunday.Location = new System.Drawing.Point(1110, 21);
+            this.lblSunday.Name = "lblSunday";
+            this.lblSunday.Size = new System.Drawing.Size(128, 68);
+            this.lblSunday.TabIndex = 34;
+            this.lblSunday.Text = "Sun";
+            // 
+            // lblSaturday
+            // 
+            this.lblSaturday.AutoSize = true;
+            this.lblSaturday.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.lblSaturday.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblSaturday.Location = new System.Drawing.Point(941, 21);
+            this.lblSaturday.Name = "lblSaturday";
+            this.lblSaturday.Size = new System.Drawing.Size(116, 68);
+            this.lblSaturday.TabIndex = 33;
+            this.lblSaturday.Text = "Sat";
+            // 
+            // lblFriday
+            // 
+            this.lblFriday.AutoSize = true;
+            this.lblFriday.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.lblFriday.ForeColor = System.Drawing.Color.Black;
+            this.lblFriday.Location = new System.Drawing.Point(778, 21);
+            this.lblFriday.Name = "lblFriday";
+            this.lblFriday.Size = new System.Drawing.Size(96, 68);
+            this.lblFriday.TabIndex = 31;
+            this.lblFriday.Text = "Fri";
+            // 
+            // lblThursday
+            // 
+            this.lblThursday.AutoSize = true;
+            this.lblThursday.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.lblThursday.ForeColor = System.Drawing.Color.Black;
+            this.lblThursday.Location = new System.Drawing.Point(549, 21);
+            this.lblThursday.Name = "lblThursday";
+            this.lblThursday.Size = new System.Drawing.Size(180, 68);
+            this.lblThursday.TabIndex = 30;
+            this.lblThursday.Text = "Thurs";
+            // 
+            // lblWednesday
+            // 
+            this.lblWednesday.AutoSize = true;
+            this.lblWednesday.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.lblWednesday.ForeColor = System.Drawing.Color.Black;
+            this.lblWednesday.Location = new System.Drawing.Point(376, 21);
+            this.lblWednesday.Name = "lblWednesday";
+            this.lblWednesday.Size = new System.Drawing.Size(140, 68);
+            this.lblWednesday.TabIndex = 29;
+            this.lblWednesday.Text = "Wed";
+            // 
+            // lblTuesday
+            // 
+            this.lblTuesday.AutoSize = true;
+            this.lblTuesday.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.lblTuesday.ForeColor = System.Drawing.Color.Black;
+            this.lblTuesday.Location = new System.Drawing.Point(193, 21);
+            this.lblTuesday.Name = "lblTuesday";
+            this.lblTuesday.Size = new System.Drawing.Size(155, 68);
+            this.lblTuesday.TabIndex = 28;
+            this.lblTuesday.Text = "Tues";
+            // 
+            // lblMonday
+            // 
+            this.lblMonday.AutoSize = true;
+            this.lblMonday.Font = new System.Drawing.Font("Arial Black", 16F, System.Drawing.FontStyle.Bold);
+            this.lblMonday.ForeColor = System.Drawing.Color.Black;
+            this.lblMonday.Location = new System.Drawing.Point(30, 21);
+            this.lblMonday.Name = "lblMonday";
+            this.lblMonday.Size = new System.Drawing.Size(138, 68);
+            this.lblMonday.TabIndex = 32;
+            this.lblMonday.Text = "Mon";
+            // 
+            // lblGarbage4
+            // 
+            this.lblGarbage4.AutoSize = true;
+            this.lblGarbage4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGarbage4.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblGarbage4.Location = new System.Drawing.Point(37, 275);
+            this.lblGarbage4.Name = "lblGarbage4";
+            this.lblGarbage4.Size = new System.Drawing.Size(147, 27);
+            this.lblGarbage4.TabIndex = 11;
+            this.lblGarbage4.Text = "08:00🠖08:30";
+            // 
+            // lblCardboard4
+            // 
+            this.lblCardboard4.AutoSize = true;
+            this.lblCardboard4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardboard4.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblCardboard4.Location = new System.Drawing.Point(379, 275);
+            this.lblCardboard4.Name = "lblCardboard4";
+            this.lblCardboard4.Size = new System.Drawing.Size(147, 27);
+            this.lblCardboard4.TabIndex = 30;
+            this.lblCardboard4.Text = "08:30🠖09:00";
+            // 
+            // lblClean4
+            // 
+            this.lblClean4.AutoSize = true;
+            this.lblClean4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClean4.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.lblClean4.Location = new System.Drawing.Point(563, 275);
+            this.lblClean4.Name = "lblClean4";
+            this.lblClean4.Size = new System.Drawing.Size(147, 27);
+            this.lblClean4.TabIndex = 30;
+            this.lblClean4.Text = "09:30🠖14:00";
             // 
             // studentForm
             // 
@@ -382,6 +757,12 @@ namespace PCBS03_3_student_housing
             this.tpStudentAnnouncements.PerformLayout();
             this.pnlBackground.ResumeLayout(false);
             this.pnlBar.ResumeLayout(false);
+            this.tpSchedule.ResumeLayout(false);
+            this.tpSchedule.PerformLayout();
+            this.gbSchedule.ResumeLayout(false);
+            this.gbSchedule.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -413,5 +794,34 @@ namespace PCBS03_3_student_housing
         private System.Windows.Forms.TextBox tbxMessageAnnouncements;
         private System.Windows.Forms.ListBox lbxStudentAnnouncements;
         private System.Windows.Forms.ListBox lbxStudentRules;
+        private System.Windows.Forms.TabPage tpSchedule;
+        private System.Windows.Forms.Label lblRecycle2;
+        private System.Windows.Forms.Label lblRecycle1;
+        private System.Windows.Forms.Label lblRecycle3;
+        private System.Windows.Forms.GroupBox gbSchedule;
+        private System.Windows.Forms.Label lblBlank1;
+        private System.Windows.Forms.Label lblBlank2;
+        private System.Windows.Forms.Label lblGarbage2;
+        private System.Windows.Forms.Label lblCardboard2;
+        private System.Windows.Forms.Label lblClean2;
+        private System.Windows.Forms.Label lblCardboard1;
+        private System.Windows.Forms.Label lblClean1;
+        private System.Windows.Forms.Label lblGarbage1;
+        private System.Windows.Forms.Label lblCardboard3;
+        private System.Windows.Forms.Label lblClean3;
+        private System.Windows.Forms.Label lblGarbage3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblSunday;
+        private System.Windows.Forms.Label lblSaturday;
+        private System.Windows.Forms.Label lblFriday;
+        private System.Windows.Forms.Label lblThursday;
+        private System.Windows.Forms.Label lblWednesday;
+        private System.Windows.Forms.Label lblTuesday;
+        private System.Windows.Forms.Label lblMonday;
+        private System.Windows.Forms.Label lblBlank4;
+        private System.Windows.Forms.Label lblBlank3;
+        private System.Windows.Forms.Label lblClean4;
+        private System.Windows.Forms.Label lblCardboard4;
+        private System.Windows.Forms.Label lblGarbage4;
     }
 }
