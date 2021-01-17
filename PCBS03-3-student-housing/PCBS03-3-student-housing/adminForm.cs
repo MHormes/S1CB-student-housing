@@ -245,7 +245,7 @@ namespace PCBS03_3_student_housing
                 if(com.GetComplaint() == (string)lbxAdminComplaint.SelectedItem)
                 {
                     adminComplaints.Remove(com);
-                    MessageBox.Show("Complaint checked of as done");
+                    MessageBox.Show("Complaint checked off as done");
                     UpdateComplaintList();
                     return;
                 }
@@ -349,6 +349,7 @@ namespace PCBS03_3_student_housing
                 }
                 UpdateRuleList();
                 Rule.CountSeeder--;
+                MessageBox.Show("Rule has been removed");
                 return;
             }
             MessageBox.Show("Please select a rule to remove");

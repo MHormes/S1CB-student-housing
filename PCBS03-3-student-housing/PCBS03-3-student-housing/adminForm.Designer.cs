@@ -112,8 +112,8 @@ namespace PCBS03_3_student_housing
             // tbxAuthorName
             // 
             this.tbxAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxAuthorName.Location = new System.Drawing.Point(772, 397);
-            this.tbxAuthorName.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tbxAuthorName.Location = new System.Drawing.Point(775, 429);
+            this.tbxAuthorName.Margin = new System.Windows.Forms.Padding(7);
             this.tbxAuthorName.Name = "tbxAuthorName";
             this.tbxAuthorName.Size = new System.Drawing.Size(541, 55);
             this.tbxAuthorName.TabIndex = 2;
@@ -121,7 +121,7 @@ namespace PCBS03_3_student_housing
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(777, 359);
+            this.label2.Location = new System.Drawing.Point(780, 391);
             this.label2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(220, 29);
@@ -131,7 +131,7 @@ namespace PCBS03_3_student_housing
             // btnAddNews
             // 
             this.btnAddNews.Location = new System.Drawing.Point(772, 504);
-            this.btnAddNews.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnAddNews.Margin = new System.Windows.Forms.Padding(7);
             this.btnAddNews.Name = "btnAddNews";
             this.btnAddNews.Size = new System.Drawing.Size(541, 51);
             this.btnAddNews.TabIndex = 3;
@@ -153,10 +153,10 @@ namespace PCBS03_3_student_housing
             // 
             this.tbxMessage.AcceptsReturn = true;
             this.tbxMessage.Location = new System.Drawing.Point(770, 49);
-            this.tbxMessage.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tbxMessage.Margin = new System.Windows.Forms.Padding(7);
             this.tbxMessage.Multiline = true;
             this.tbxMessage.Name = "tbxMessage";
-            this.tbxMessage.Size = new System.Drawing.Size(543, 290);
+            this.tbxMessage.Size = new System.Drawing.Size(543, 323);
             this.tbxMessage.TabIndex = 1;
             // 
             // lbxAdminNews
@@ -164,7 +164,7 @@ namespace PCBS03_3_student_housing
             this.lbxAdminNews.FormattingEnabled = true;
             this.lbxAdminNews.ItemHeight = 29;
             this.lbxAdminNews.Location = new System.Drawing.Point(14, 13);
-            this.lbxAdminNews.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.lbxAdminNews.Margin = new System.Windows.Forms.Padding(7);
             this.lbxAdminNews.Name = "lbxAdminNews";
             this.lbxAdminNews.Size = new System.Drawing.Size(739, 555);
             this.lbxAdminNews.TabIndex = 0;
@@ -190,76 +190,76 @@ namespace PCBS03_3_student_housing
             // 
             // button_unselect
             // 
-            this.button_unselect.Location = new System.Drawing.Point(222, 522);
-            this.button_unselect.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.button_unselect.Location = new System.Drawing.Point(12, 522);
+            this.button_unselect.Margin = new System.Windows.Forms.Padding(7);
             this.button_unselect.Name = "button_unselect";
             this.button_unselect.Size = new System.Drawing.Size(331, 51);
             this.button_unselect.TabIndex = 8;
-            this.button_unselect.Text = "Unselect item";
+            this.button_unselect.Text = "Deselect item";
             this.button_unselect.UseVisualStyleBackColor = true;
             this.button_unselect.Click += new System.EventHandler(this.button_unselect_Click_1);
             // 
             // button_removeTenant
             // 
-            this.button_removeTenant.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button_removeTenant.Location = new System.Drawing.Point(929, 408);
-            this.button_removeTenant.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.button_removeTenant.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button_removeTenant.Location = new System.Drawing.Point(849, 353);
+            this.button_removeTenant.Margin = new System.Windows.Forms.Padding(7);
             this.button_removeTenant.Name = "button_removeTenant";
-            this.button_removeTenant.Size = new System.Drawing.Size(240, 51);
+            this.button_removeTenant.Size = new System.Drawing.Size(446, 70);
             this.button_removeTenant.TabIndex = 7;
-            this.button_removeTenant.Text = "Remove tenant";
+            this.button_removeTenant.Text = "🗑️ Remove tenant";
             this.button_removeTenant.UseVisualStyleBackColor = true;
             this.button_removeTenant.Click += new System.EventHandler(this.button_removeTenant_Click);
             // 
             // button_addTenant
             // 
-            this.button_addTenant.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button_addTenant.Location = new System.Drawing.Point(929, 344);
-            this.button_addTenant.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.button_addTenant.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button_addTenant.Location = new System.Drawing.Point(849, 269);
+            this.button_addTenant.Margin = new System.Windows.Forms.Padding(7);
             this.button_addTenant.Name = "button_addTenant";
-            this.button_addTenant.Size = new System.Drawing.Size(240, 51);
+            this.button_addTenant.Size = new System.Drawing.Size(446, 70);
             this.button_addTenant.TabIndex = 6;
-            this.button_addTenant.Text = "Add tenant";
+            this.button_addTenant.Text = "+ Add tenant";
             this.button_addTenant.UseVisualStyleBackColor = true;
             this.button_addTenant.Click += new System.EventHandler(this.button_addTenant_Click);
             // 
             // textBox_tenantPassword
             // 
-            this.textBox_tenantPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox_tenantPassword.Location = new System.Drawing.Point(1031, 254);
+            this.textBox_tenantPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.textBox_tenantPassword.Location = new System.Drawing.Point(1040, 165);
             this.textBox_tenantPassword.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBox_tenantPassword.Name = "textBox_tenantPassword";
-            this.textBox_tenantPassword.Size = new System.Drawing.Size(191, 41);
+            this.textBox_tenantPassword.Size = new System.Drawing.Size(255, 52);
             this.textBox_tenantPassword.TabIndex = 5;
             // 
             // textBox_tenantName
             // 
-            this.textBox_tenantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textBox_tenantName.Location = new System.Drawing.Point(1031, 185);
+            this.textBox_tenantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            this.textBox_tenantName.Location = new System.Drawing.Point(1040, 93);
             this.textBox_tenantName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.textBox_tenantName.Name = "textBox_tenantName";
-            this.textBox_tenantName.Size = new System.Drawing.Size(191, 41);
+            this.textBox_tenantName.Size = new System.Drawing.Size(255, 52);
             this.textBox_tenantName.TabIndex = 4;
             // 
             // label_tenantPassword
             // 
             this.label_tenantPassword.AutoSize = true;
-            this.label_tenantPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_tenantPassword.Location = new System.Drawing.Point(863, 259);
+            this.label_tenantPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_tenantPassword.Location = new System.Drawing.Point(795, 165);
             this.label_tenantPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_tenantPassword.Name = "label_tenantPassword";
-            this.label_tenantPassword.Size = new System.Drawing.Size(155, 36);
+            this.label_tenantPassword.Size = new System.Drawing.Size(235, 52);
             this.label_tenantPassword.TabIndex = 3;
             this.label_tenantPassword.Text = "Password:";
             // 
             // label_tenantName
             // 
             this.label_tenantName.AutoSize = true;
-            this.label_tenantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_tenantName.Location = new System.Drawing.Point(863, 190);
+            this.label_tenantName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label_tenantName.Location = new System.Drawing.Point(795, 96);
             this.label_tenantName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label_tenantName.Name = "label_tenantName";
-            this.label_tenantName.Size = new System.Drawing.Size(100, 36);
+            this.label_tenantName.Size = new System.Drawing.Size(156, 52);
             this.label_tenantName.TabIndex = 2;
             this.label_tenantName.Text = "Name:";
             // 
@@ -268,7 +268,7 @@ namespace PCBS03_3_student_housing
             this.listBox_tenants.FormattingEnabled = true;
             this.listBox_tenants.ItemHeight = 29;
             this.listBox_tenants.Location = new System.Drawing.Point(12, 11);
-            this.listBox_tenants.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.listBox_tenants.Margin = new System.Windows.Forms.Padding(7);
             this.listBox_tenants.Name = "listBox_tenants";
             this.listBox_tenants.Size = new System.Drawing.Size(739, 497);
             this.listBox_tenants.TabIndex = 1;
@@ -282,9 +282,9 @@ namespace PCBS03_3_student_housing
             this.tpAdminComplaints.Controls.Add(this.btnRefreshComplaints);
             this.tpAdminComplaints.Controls.Add(this.lbxAdminComplaint);
             this.tpAdminComplaints.Location = new System.Drawing.Point(10, 47);
-            this.tpAdminComplaints.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tpAdminComplaints.Margin = new System.Windows.Forms.Padding(7);
             this.tpAdminComplaints.Name = "tpAdminComplaints";
-            this.tpAdminComplaints.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tpAdminComplaints.Padding = new System.Windows.Forms.Padding(7);
             this.tpAdminComplaints.Size = new System.Drawing.Size(1329, 579);
             this.tpAdminComplaints.TabIndex = 2;
             this.tpAdminComplaints.Text = "Complaints";
@@ -292,19 +292,20 @@ namespace PCBS03_3_student_housing
             // 
             // btnAddComplaintComment
             // 
-            this.btnAddComplaintComment.Location = new System.Drawing.Point(390, 486);
-            this.btnAddComplaintComment.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnAddComplaintComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAddComplaintComment.Location = new System.Drawing.Point(14, 509);
+            this.btnAddComplaintComment.Margin = new System.Windows.Forms.Padding(7);
             this.btnAddComplaintComment.Name = "btnAddComplaintComment";
-            this.btnAddComplaintComment.Size = new System.Drawing.Size(338, 51);
+            this.btnAddComplaintComment.Size = new System.Drawing.Size(452, 65);
             this.btnAddComplaintComment.TabIndex = 5;
-            this.btnAddComplaintComment.Text = "Add comment to complaint";
+            this.btnAddComplaintComment.Text = "💬 Add comment";
             this.btnAddComplaintComment.UseVisualStyleBackColor = true;
             this.btnAddComplaintComment.Click += new System.EventHandler(this.btnAddComplaintComment_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 352);
+            this.label3.Location = new System.Drawing.Point(14, 361);
             this.label3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(453, 29);
@@ -313,35 +314,35 @@ namespace PCBS03_3_student_housing
             // 
             // tbxComplaintComment
             // 
-            this.tbxComplaintComment.Location = new System.Drawing.Point(23, 388);
-            this.tbxComplaintComment.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.tbxComplaintComment.Location = new System.Drawing.Point(14, 397);
+            this.tbxComplaintComment.Margin = new System.Windows.Forms.Padding(7);
             this.tbxComplaintComment.Multiline = true;
             this.tbxComplaintComment.Name = "tbxComplaintComment";
-            this.tbxComplaintComment.Size = new System.Drawing.Size(702, 78);
+            this.tbxComplaintComment.Size = new System.Drawing.Size(676, 98);
             this.tbxComplaintComment.TabIndex = 3;
             // 
             // btnCheckComplaint
             // 
-            this.btnCheckComplaint.Location = new System.Drawing.Point(910, 352);
-            this.btnCheckComplaint.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnCheckComplaint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnCheckComplaint.Location = new System.Drawing.Point(767, 352);
+            this.btnCheckComplaint.Margin = new System.Windows.Forms.Padding(7);
             this.btnCheckComplaint.Name = "btnCheckComplaint";
-            this.btnCheckComplaint.Size = new System.Drawing.Size(252, 51);
+            this.btnCheckComplaint.Size = new System.Drawing.Size(324, 65);
             this.btnCheckComplaint.TabIndex = 2;
-            this.btnCheckComplaint.Text = "Check as done";
+            this.btnCheckComplaint.Text = "☑ Mark as done";
             this.btnCheckComplaint.UseVisualStyleBackColor = true;
             this.btnCheckComplaint.Click += new System.EventHandler(this.btnCheckComplaint_Click);
             // 
             // btnRefreshComplaints
             // 
-            this.btnRefreshComplaints.Font = new System.Drawing.Font("Arial", 25F);
-            this.btnRefreshComplaints.Location = new System.Drawing.Point(1176, 352);
-            this.btnRefreshComplaints.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.btnRefreshComplaints.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnRefreshComplaints.Location = new System.Drawing.Point(1105, 352);
+            this.btnRefreshComplaints.Margin = new System.Windows.Forms.Padding(7);
             this.btnRefreshComplaints.Name = "btnRefreshComplaints";
-            this.btnRefreshComplaints.Size = new System.Drawing.Size(135, 100);
+            this.btnRefreshComplaints.Size = new System.Drawing.Size(206, 65);
             this.btnRefreshComplaints.TabIndex = 0;
             this.btnRefreshComplaints.TabStop = false;
-            this.btnRefreshComplaints.Text = "⟳";
-            this.btnRefreshComplaints.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRefreshComplaints.Text = "⟳ Refresh";
             this.btnRefreshComplaints.UseVisualStyleBackColor = true;
             this.btnRefreshComplaints.Click += new System.EventHandler(this.btnRefreshComplaints_Click);
             // 
@@ -350,7 +351,7 @@ namespace PCBS03_3_student_housing
             this.lbxAdminComplaint.FormattingEnabled = true;
             this.lbxAdminComplaint.ItemHeight = 29;
             this.lbxAdminComplaint.Location = new System.Drawing.Point(9, 9);
-            this.lbxAdminComplaint.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.lbxAdminComplaint.Margin = new System.Windows.Forms.Padding(7);
             this.lbxAdminComplaint.Name = "lbxAdminComplaint";
             this.lbxAdminComplaint.Size = new System.Drawing.Size(1301, 323);
             this.lbxAdminComplaint.TabIndex = 0;
@@ -372,7 +373,7 @@ namespace PCBS03_3_student_housing
             this.lbxAdminAnnouncement.FormattingEnabled = true;
             this.lbxAdminAnnouncement.ItemHeight = 29;
             this.lbxAdminAnnouncement.Location = new System.Drawing.Point(16, 13);
-            this.lbxAdminAnnouncement.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.lbxAdminAnnouncement.Margin = new System.Windows.Forms.Padding(7);
             this.lbxAdminAnnouncement.Name = "lbxAdminAnnouncement";
             this.lbxAdminAnnouncement.Size = new System.Drawing.Size(1297, 555);
             this.lbxAdminAnnouncement.TabIndex = 5;
@@ -385,9 +386,9 @@ namespace PCBS03_3_student_housing
             this.tpAdminRules.Controls.Add(this.btnAddRule);
             this.tpAdminRules.Controls.Add(this.lbxAdminRules);
             this.tpAdminRules.Location = new System.Drawing.Point(10, 47);
-            this.tpAdminRules.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpAdminRules.Margin = new System.Windows.Forms.Padding(2);
             this.tpAdminRules.Name = "tpAdminRules";
-            this.tpAdminRules.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tpAdminRules.Padding = new System.Windows.Forms.Padding(2);
             this.tpAdminRules.Size = new System.Drawing.Size(1329, 579);
             this.tpAdminRules.TabIndex = 4;
             this.tpAdminRules.Text = "Edit rules";
@@ -397,7 +398,7 @@ namespace PCBS03_3_student_housing
             // 
             this.btnEditRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditRule.Location = new System.Drawing.Point(1043, 343);
-            this.btnEditRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditRule.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditRule.Name = "btnEditRule";
             this.btnEditRule.Size = new System.Drawing.Size(252, 90);
             this.btnEditRule.TabIndex = 5;
@@ -409,7 +410,7 @@ namespace PCBS03_3_student_housing
             // tbxRule
             // 
             this.tbxRule.Location = new System.Drawing.Point(820, 33);
-            this.tbxRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbxRule.Margin = new System.Windows.Forms.Padding(2);
             this.tbxRule.Multiline = true;
             this.tbxRule.Name = "tbxRule";
             this.tbxRule.Size = new System.Drawing.Size(475, 287);
@@ -421,7 +422,7 @@ namespace PCBS03_3_student_housing
             // 
             this.btnRemoveRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveRule.Location = new System.Drawing.Point(820, 439);
-            this.btnRemoveRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveRule.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveRule.Name = "btnRemoveRule";
             this.btnRemoveRule.Size = new System.Drawing.Size(475, 90);
             this.btnRemoveRule.TabIndex = 3;
@@ -434,7 +435,7 @@ namespace PCBS03_3_student_housing
             // 
             this.btnAddRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddRule.Location = new System.Drawing.Point(820, 343);
-            this.btnAddRule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddRule.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddRule.Name = "btnAddRule";
             this.btnAddRule.Size = new System.Drawing.Size(219, 90);
             this.btnAddRule.TabIndex = 3;
@@ -448,7 +449,7 @@ namespace PCBS03_3_student_housing
             this.lbxAdminRules.FormattingEnabled = true;
             this.lbxAdminRules.ItemHeight = 29;
             this.lbxAdminRules.Location = new System.Drawing.Point(58, 33);
-            this.lbxAdminRules.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.lbxAdminRules.Margin = new System.Windows.Forms.Padding(7);
             this.lbxAdminRules.Name = "lbxAdminRules";
             this.lbxAdminRules.Size = new System.Drawing.Size(739, 497);
             this.lbxAdminRules.TabIndex = 2;

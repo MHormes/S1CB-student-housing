@@ -14,12 +14,11 @@ namespace PCBS03_3_student_housing
         {
             return new List<Rule>
             {
-                new Rule("Don't do this"),
-                new Rule("Don't do that"),
-                new Rule("Always do this"),
-                new Rule("Never do that")
+                new Rule("Make sure to turn off lights when you have left the house."),
+                new Rule("Smoking is not allowed inside the house."),
+                new Rule("Make sure the rooms get ventilated to prevent mold growth."),
+                new Rule("Do not flush foreign items down the toilet.")
             };
-            
         }
 
         public static void SeedStudent()
@@ -27,14 +26,13 @@ namespace PCBS03_3_student_housing
             Student.addStudent("Alessandro", "12345");
             Student.addStudent("Luca", "12345");
             Student.addStudent("Maarten", "12345");
-            
         }
 
         public static void SeedComplaint()
         {
-            studentForm.complaintStudentList.Add(new Complaint("Maarten is way to loud.", "Luca"));
+            studentForm.complaintStudentList.Add(new Complaint("Maarten is way too loud.", "Luca"));
             studentForm.complaintStudentList.Add(new Complaint("Alessandro never cleans.", "Maarten"));
-            studentForm.complaintStudentList.Add(new Complaint("Luca never fluhes the toilet.", "Alessandro"));
+            studentForm.complaintStudentList.Add(new Complaint("Luca never flushes the toilet.", "Alessandro"));
             Counter++;
         }
 
@@ -49,7 +47,7 @@ namespace PCBS03_3_student_housing
         {
             studentForm.announcementList.Add(new Announcement("I will be on holiday till 07/02, so won't do my tasks", "Alessandro"));
             studentForm.announcementList.Add(new Announcement("The trash wasn't take out today", "Luca"));
-            studentForm.announcementList.Add(new Announcement("I will host a part on 27/01", "Maarten"));
+            studentForm.announcementList.Add(new Announcement("I will host a party on 27/01", "Maarten"));
         }
     }
 }
