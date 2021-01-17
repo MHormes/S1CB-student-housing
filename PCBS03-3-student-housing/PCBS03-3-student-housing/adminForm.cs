@@ -38,22 +38,31 @@ namespace PCBS03_3_student_housing
         public adminForm()
         {
             InitializeComponent();
+            PopulateApp();
             UpdateNewsList();
             UpdateComplaintList();
             UpdateAnnouncementList();
             UpdateStudentList();
-            PopulateRules();
             UpdateRuleList();
         }
 
         //Population method
-        public void PopulateRules()
+        public void PopulateApp()
         {
-            var seeds = RuleFactory.Seed();
-            foreach (var rule in seeds)
+            //Only populatet once
+            if(PopulateClass.Counter == 1)
+            {
+                return;
+            }
+
+            foreach (Rule rule in PopulateClass.SeedRule())
             {
                 ruleList.Add(rule);
             }
+            PopulateClass.SeedStudent();
+            PopulateClass.SeedComplaint();
+            PopulateClass.SeedNewsList();
+            PopulateClass.SeedAnnouncements();
         }
 
         //Add news to the news tab

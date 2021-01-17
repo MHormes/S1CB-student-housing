@@ -53,7 +53,7 @@
       <DependentUpon>adminForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Announcement.cs" />
-    <Compile Include="RuleFactory.cs" />
+    <Compile Include="PopulateClass.cs" />
     <Compile Include="Complaint.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
