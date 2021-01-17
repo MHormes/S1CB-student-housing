@@ -42,7 +42,18 @@ namespace PCBS03_3_student_housing
             UpdateComplaintList();
             UpdateAnnouncementList();
             UpdateStudentList();
+            PopulateRules();
             UpdateRuleList();
+        }
+
+        //Population method
+        public void PopulateRules()
+        {
+            var seeds = RuleFactory.Seed();
+            foreach (var rule in seeds)
+            {
+                ruleList.Add(rule);
+            }
         }
 
         //Add news to the news tab
@@ -343,6 +354,22 @@ namespace PCBS03_3_student_housing
                 return;
             }
             MessageBox.Show("Please select a rule and fill in the field before clicking the button");
+        }
+
+        private void lbxAdminRules_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selectedIndex = lbxAdminRules.SelectedIndex;
+            if(selectedIndex != -1)
+            {
+                tbxRule.Text = ruleList[selectedIndex].RuleText;
+                btnAddRule.Enabled = false;
+            }
+            
+        }
+
+        private void tbxRule_TextChanged(object sender, EventArgs e)
+        {
+            btnAddRule.Enabled = true;
         }
     }
 }

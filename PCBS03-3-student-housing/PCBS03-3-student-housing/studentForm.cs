@@ -221,5 +221,20 @@ namespace PCBS03_3_student_housing
                 MessageBox.Show("Please fill in both fields before pressing the add button");
              }
         }
+
+        private void lblGarbage4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"- Make sure to use the bin marked with your house number.\n\n- Ensure that the garbage bags are closed to avoid accidental messes.\n\n- Please try to dispose of your garbage weekly to avoid any odors within the house.", "Garbage Collection Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void lblCardboard4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"- Make sure to leave the cardboard neatly on the side of the road.\n\n- Please try to dispose of your cardboard on this day of the week. Do not put the cardboard with the garbage", "Cardboard Collection Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void lblClean3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Please note that the cleaners will not be present on days which fall on public holidays", "Cleaning Service Details", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

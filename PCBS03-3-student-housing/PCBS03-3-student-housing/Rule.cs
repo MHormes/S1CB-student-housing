@@ -20,6 +20,7 @@ namespace PCBS03_3_student_housing
 
         public string RuleText
         {
+            get { return this.ruleText;  }
             set { this.ruleText = value; }
         }
         public Rule(string rule)
