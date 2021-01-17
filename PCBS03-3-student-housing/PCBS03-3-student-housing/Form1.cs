@@ -70,7 +70,7 @@ namespace PCBS03_3_student_housing
 
                 if (!found)
                 {
-                    MessageBox.Show("The account doesn't exist. Please retry.");
+                    errorAccount();
                     return;
                 }
 
@@ -85,7 +85,7 @@ namespace PCBS03_3_student_housing
                 {
                     studentName = textBox_accountName.Text;
                     //form1 closed and go to student form
-                    studentForm nextForm = new studentForm();
+                    studentForm nextForm = new studentForm(studentName);
                     this.Hide();
                     nextForm.ShowDialog();
                     this.Close();

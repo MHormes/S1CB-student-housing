@@ -32,14 +32,14 @@ namespace PCBS03_3_student_housing
         //mouse coords which are needed for GUI drag bar functionality
         public Point mouseLocation;
 
-        public studentForm()
+        public studentForm(string studentName)
         {
             InitializeComponent();
             UpdateNewsList();
             UpdateComplaintList();
             UpdateAnnouncementList();
             UpdateRulesList();
-            //lblHeader.Text = $"Welcome, {StudentName}";
+            lblHeader.Text = $"Welcome, {studentName}";
         }
 
         // Method for updating the news listbox. 
